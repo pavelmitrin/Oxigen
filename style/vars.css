@@ -1,0 +1,10 @@
+:root {
+	/* fonts */
+	--font-circle: "Circe";
+	/* text color */
+	--text-blue-color: #02667a;
+	--text-brown-color: #8c7342;
+	/* bg color */
+	--bg-blue-gradient: linear-gradient(135deg, rgba(0,121,140,1) 0%, rgba(3,222,207,1) 100%);
+
+}

@@ -1,0 +1,399 @@
+/* Повторяющиеся */
+.o-text-brown {
+	color: var(--text-brown-color);
+}
+.btn-gradient {
+	background-image: var(--bg-blue-gradient);
+	border-radius: 30px;
+	border:1px solid transparent;
+	text-shadow: 0 0 10px #000;
+}
+body {
+	background-color: #f5f4f2;
+	font-family: var(--font-circle);
+}
+section:not(:first-child) {
+	margin: 50px 0;
+}
+
+
+
+/* header */
+.header {
+	display: none;
+}
+.brand-text {
+	text-transform: uppercase;
+	color: var(--text-blue-color);
+	font-family: var(--font-circle);
+}
+.brand-title {
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 800;
+}
+.brand-subtitle {
+	line-height: 12px;
+	font-size: 8px;
+	font-weight: 700;
+}
+.navbar-call {
+	a {
+		font-family: var(--font-circle);
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.55;
+
+	}
+}
+.header .btn-gradient {
+	font-size: 16px;
+}
+
+
+
+/* head */
+.head__title {
+	font-size: 37px;
+	@media (min-width:768px) {
+		& {
+			font-size: 32px;
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			font-size: 39px;
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			font-size: 45px;
+		}
+	}
+}
+.head__info {
+	font-size: 20px;
+	@media (min-width:1200px) {
+		& {
+			font-size: 24px;
+		}
+	}	
+}
+.head__presentation-text {
+	font-size: 13px;
+	line-height: 17px;
+	opacity: .4;
+	@media (min-width:768px) {
+		& {
+			font-size: 17px;
+			line-height: 21px;
+		}
+	}	
+}
+
+.head__persent {
+	font-size: 22px;
+	background-image: var(--bg-blue-gradient);
+	border-radius: 50%;
+	min-width: 64px;
+	height: 64px;
+	z-index: 2;
+	@media (min-width:768px) {
+		& {
+			font-size: 30px;
+			min-width: 100px;
+			height: 100px;
+		}
+	}	
+}
+.head__availability {
+	height: 80%;
+	margin: auto 0;
+	background-color: #f09409;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	position: relative;
+	left: -13px;
+	font-size: 21px;
+	@media (min-width:768px) {
+		& {
+			height: 65%;
+			font-size: 33px;
+		}
+	}	
+}
+.head .btn-gradient, .more .btn-gradient {
+	font-size: 20px;
+}
+.btn.o-head__btn {
+	border-radius: 30px;
+	&:hover {
+		span,i {
+			color: #fff;
+		}
+	}
+}
+.o-head-preview {
+	@media (min-width:992px) {
+		& {
+			position: absolute;
+			top: 47%;
+			left: 30%;
+			z-index: 2;
+			// width: 60%;
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			top: 45%;
+		}
+	}
+}
+.o-head-bg__text, .o-head__bid, .o-head__logo {
+	z-index: 2;
+}
+.o-head__bid {
+	top: 35%;
+}
+.o-head__logo {
+	max-width: 150px;
+	max-height: 150px;
+}
+.o-head__arrow {
+	transition: all 0.5s ease 0s;
+	transform: translate(80px, 20px) rotate(120deg);
+	@media (min-width:576px) {
+		& {
+			transform: translate(150px, 20px) rotate(120deg);
+		}
+	}
+	@media (min-width:768px) {
+		& {
+			transform: translate(230px, 20px) rotate(120deg);
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			transform: translate(80px, 0) rotate(-30deg);
+		}
+	}
+	@media (min-width:1100px) {
+		& {
+			transform: translate(80px, 20px) rotate(0);
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			transform: translate(80px, 20px) rotate(-30deg);
+		}
+	}
+	
+}
+.o-head__bid .head__availability {
+	background-image: var(--bg-blue-gradient);
+}
+img.head__bg-picture {
+	transition: all 0.8s ease 0s;
+	transform: translate(-30%, 0) scale(0);
+	&:hover {
+		transform: translate(-30%, 0) scale(1.1);
+	}
+	@media (min-width:992px) {
+		& {
+			max-width: none;
+			transform: translate(-30%, 0);
+		}
+	}
+}
+
+/* swiperOne */
+
+
+
+
+/* about */
+.o-repeat__text {
+	line-height: 30px;
+	font-size: 18px;
+	@media (min-width:576px) {
+		& {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+	@media (min-width:768px) {
+		& {
+			font-size: 22px;
+			line-height: 36px;
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			font-size: 24px;
+			line-height: 40px;
+		}
+	}
+}
+.o-about__img-container, .o-about__img-container2 {
+	overflow-x: hidden;
+	max-width: 400px;
+	@media (min-width:768px) {
+		& {
+			transform: translate(0, 60px);
+		}
+	}
+}
+.o-about__img-container2 {
+	@media (min-width:768px) {
+		& {
+			transform: translate(0, -60px);
+		}
+	}
+}
+.o-about__img {
+	height: 100%;
+	width: 100%;
+	max-height: 463px;
+	@media (min-width:768px) {
+		& {
+			width: auto;
+		}
+	}
+}
+.o-about__info {
+	line-height: 52px;
+	font-size: 40px;
+	@media (min-width:576px) {
+		& {
+			font-size: 46px;
+			line-height: 60px;
+		}
+	}
+	@media (min-width:768px) {
+		& {
+			font-size: 35px;
+			line-height: 46px;
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			font-size: 30px;
+			line-height: 39px;
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			font-size: 100px;
+			line-height: 120px;
+		}
+	}
+}
+.o-about__subinfo {
+	font-size: 24px;
+	line-height: 37px;
+}
+.o-about-text {
+	line-height: 30px;
+	font-size: 18px;
+	@media (min-width:576px) {
+		& {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+	@media (min-width:768px) {
+		& {
+			font-size: 22px;
+			line-height: 36px;
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+	@media (min-width:1200px) {
+		& {
+			font-size: 24px;
+			line-height: 40px;
+		}
+	}
+}
+
+/* more */
+.o-more__arrow {
+	right: 0px;
+	top: 15%;
+	transform:rotate(-15deg);
+}
+.o-more__info {
+	background-color: #ffffffd3;
+}
+
+
+/* infoButton */
+.o-rep__infoButton {
+	z-index: 2;
+	min-width: 80px;
+	min-height: 80px;	
+	left: calc(50% - 40px);
+	border-radius: 50%;
+	font-size: 25px;
+	color: var(--text-blue-color);
+	border: 1px solid var(--text-blue-color);
+	animation-name: info;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+@keyframes info {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.1, 1.1);
+	}
+}
+
+/* picture */
+section.picture {
+	margin: 0px 0;
+	padding: 80px 0;
+	img {
+		min-height: 760px;
+		object-fit: cover;
+	}
+}
+
+/* layouts */
+.o-layouts__cart {
+	min-height: 100%;
+}
+.o-layouts__title {
+	font-size: 35px;
+	@media (min-width:576px) {
+		& {
+			font-size: 40px;
+		}
+	}
+	@media (min-width:768px) {
+		& {
+			font-size: 45px;
+		}
+	}
+	@media (min-width:992px) {
+		& {
+			font-size: 50px;
+		}
+	}
+}
+
+
+/* excursion */
