@@ -414,3 +414,32 @@ section.picture img {
   background: rgb(1, 98, 122);
   background: radial-gradient(circle, rgb(1, 98, 122) 0%, rgb(1, 98, 122) 50%, rgba(1, 98, 122, 0) 100%);
 }
+
+/* safety */
+.o-safety__dopimg {
+  max-width: 180px;
+  z-index: 2;
+  right: 20px;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  .o-safety__dopimg {
+    max-width: 260px;
+    top: 0;
+    left: 0;
+    transform: translate(-100px, -10px);
+  }
+}
+
+.o-safety__dopimg2 {
+  width: 83px;
+}
+@media (min-width: 768px) {
+  .o-safety__dopimg2 {
+    width: 35%;
+  }
+}
+
+.safety .o-about__img {
+  min-height: 340px;
+}
