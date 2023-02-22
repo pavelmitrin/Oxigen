@@ -274,13 +274,17 @@
 			</div>
 		</section>
 		<section class="excursion">
-			<div class="container-fill px-0 mx-0 position-relative">
-				<img src="img/excursion.jpg" class="img-fill" alt="">
-				<div class="row position-relative  overflow-hidden">
-					<div class="col-10 col-md-8 p-4 mx-auto">
+			<div class="container-fill px-0 mx-0 position-relative overflow-hidden o-excursion__block d-flex align-items-center justify-content-center">
+				<div class="row align-self-start">
+					<div class="col-12">
+						<img src="img/excursion.jpg" class="img-fill position-absolute top-0 start-0" alt="">
+					</div>
+				</div>
+				<div class="row position-relative overflow-hidden">
+					<div class="col-10 col-md-10 p-5 mx-auto text-white o-excursion__text">
 						<h2 class="o-excursion__title">Приезжайте на экскурсию в ЖК «Кислород» Сочи</h2>
-						<div class="d-flex flex-column flex-md-row text-center my-md-5">
-							<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#prevLayouts">Записаться на экскурсию</button>
+						<div class="d-flex flex-column flex-md-row text-center align-items-center my-md-5">
+							<button type="button" class="btn btn-gradient text-white text-nowrap py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#excursion">Записаться на экскурсию</button>
 							<ol class="text-start">
 								<li>Пройдитесь по всей территории жилого комплекса.</li>
 								<li>Оцените качество строительства и благоустройства.</li>
@@ -336,6 +340,23 @@
 			<div class="modal-content">
 				<div class="modal-header">
 				<h5 class="modal-title" id="prevLayoutsCallLabel">Заголовок модального окна</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+				...
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить изменения</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="excursion" tabindex="-1" aria-labelledby="excursionLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="excursionCallLabel">Заголовок модального окна</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
 				</div>
 				<div class="modal-body">

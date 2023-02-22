@@ -406,3 +406,11 @@ section.picture img {
 }
 
 /* excursion */
+.o-excursion__block {
+  min-height: 750px;
+}
+
+.o-excursion__text {
+  background: rgb(1, 98, 122);
+  background: radial-gradient(circle, rgb(1, 98, 122) 0%, rgb(1, 98, 122) 50%, rgba(1, 98, 122, 0) 100%);
+}
