@@ -1,4 +1,7 @@
 /* Повторяющиеся */
+html {
+	scroll-padding-top: 60px;
+}
 .o-text-brown {
 	color: var(--text-brown-color);
 }
@@ -15,13 +18,13 @@ body {
 section:not(:first-child) {
 	margin: 50px 0;
 }
+.btn:not(.btn-outline-dark) {
+	border-width: 0 !important;
+}
 
 
 
 /* header */
-.header {
-	display: none;
-}
 .brand-text {
 	text-transform: uppercase;
 	color: var(--text-blue-color);
@@ -327,11 +330,22 @@ img.head__bg-picture {
 	}
 }
 
+
 /* more */
 .o-more__arrow {
 	right: 0px;
 	top: 15%;
 	transform:rotate(-15deg);
+}
+.more.contacts {
+	.o-more__arrow {
+		@media (min-width:992px) {
+			& {
+				top: 5%;
+				transform:rotate(-5deg);
+			}
+		}
+	}
 }
 .o-more__info {
 	background-color: #ffffffd3;
@@ -403,6 +417,8 @@ section.picture {
 .o-excursion__text {
 	background: rgb(1,98,122);
 	background: radial-gradient(circle, rgba(1,98,122,1) 0%, rgba(1,98,122,1) 50%, rgba(1,98,122,0) 100%);
+	background-position: center center;
+   border-color: transparent;
 }
 
 /* safety */
@@ -431,4 +447,34 @@ section.picture {
 }
 .safety .o-about__img {
 	min-height: 340px;
+}
+
+/* progress */
+.o-progress__carousel {
+	min-height: 100vh;
+}
+
+/* documents */
+.o-documents__title {
+	line-height: 34px;
+	font-size: 22px;
+	@media (min-width:576px) {
+		font-size: 24px;
+	}
+	@media (min-width:768px) {
+		font-size: 25px;
+	}
+	@media (min-width:992px) {
+		font-size: 30px;
+	}
+	@media (min-width:1200px) {
+		font-size: 32px;
+	}
+}
+.o-doc__title, .o-doc__value {
+	line-height: 25px;
+	font-size: 16px;
+	@media (min-width:768px) {
+		font-size: 18px;
+	}
 }
