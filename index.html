@@ -602,7 +602,7 @@
 
 	<!-- Modals -->
 	<div class="modal fade" id="requestCall" tabindex="-1" aria-labelledby="requestCallLabel" aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 				<h5 class="modal-title" id="requestCallLabel">Заголовок модального окна</h5>
@@ -619,24 +619,27 @@
 		</div>
 	</div>
 	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="presentationCallLabel">Заголовок модального окна</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-				</div>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
 				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-				<button type="button" class="btn btn-primary">Сохранить изменения</button>
+					<div class="row position-absolute w-75 top-0 start-50 translate-middle">
+						<img src="img/modals/1.png" alt="">
+					</div>
+					<div class="row mt-5 mb-4 pt-5 px-3">
+						<p class="c-presentation__text text-center">Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong></p>
+						<form action="#" id="presentation__modal">
+							<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3" placeholder="+7 (999) 999-99-99" value="+7" aria-label="Номер пользователя">
+							<button class="btn btn-lg text-white w-100 rounded-pill py-3 c-presentation__modal-btn" type="submit">Скачать презентацию</button>
+						</form>
+						<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="modal fade" id="prevLayoutsCarousel" tabindex="-1" aria-labelledby="prevLayoutsCarouselLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-fullscreen-sm-down">
 			<div class="modal-content">
 				<div class="modal-header">
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
@@ -648,7 +651,7 @@
 		</div>
 	</div>
 	<div class="modal fade" id="prevLayouts" tabindex="-1" aria-labelledby="prevLayoutsLabel" aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 				<h5 class="modal-title" id="prevLayoutsCallLabel">Заголовок модального окна</h5>
@@ -664,8 +667,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="excursion" tabindex="-1" aria-labelledby="excursionLabel" aria-hidden="true">
-		<div class="modal-dialog">
+	<div class="modal fade" id="excursion" tabindex="-1" aria-labelledby="excursionLabel" aria-hidden="true">	
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 				<h5 class="modal-title" id="excursionCallLabel">Заголовок модального окна</h5>
