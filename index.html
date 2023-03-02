@@ -619,14 +619,14 @@
 		</div>
 	</div>
 	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
-		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body">
+					<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
 					<div class="row position-absolute w-75 top-0 start-50 translate-middle">
-						<img src="img/modals/1.png" alt="">
+						<img src="img/modals/1.png" class="c-presentation-modal__img" alt="">
 					</div>
-					<div class="row mt-5 mb-4 pt-5 px-3">
+					<div class="row mt-5 mb-2 pt-5 px-3">
 						<p class="c-presentation__text text-center">Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong></p>
 						<form action="#" id="presentation__modal">
 							<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3" placeholder="+7 (999) 999-99-99" value="+7" aria-label="Номер пользователя">

@@ -480,6 +480,13 @@ section.picture {
 }
 
 /* modals */
+.c-btn__closemodal {
+	top: 10px;
+	right: 10px;
+}
+.c-presentation-modal__img {
+	transform: rotate(6deg);
+}
 .c-presentation__modal-btn {
 	background: var(--text-blue-color);
 }
