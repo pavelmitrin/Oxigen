@@ -219,6 +219,57 @@ img.head__bg-picture:hover {
 }
 
 /* swiperOne */
+.carouselOne {
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .carouselOne {
+    min-height: 100vh;
+  }
+}
+.carouselOne .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.carouselOne .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselOne .swiper-button-prev, .carouselOne .swiper-button-next {
+  overflow: hidden;
+  background-color: rgb(0, 121, 140);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #fff;
+}
+.carouselOne .swiper-button-prev::after, .carouselOne .swiper-button-next::after {
+  font-size: 15px;
+}
+@media (min-width: 576px) {
+  .carouselOne .swiper-button-prev::after, .carouselOne .swiper-button-next::after {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .carouselOne .swiper-button-prev::after, .carouselOne .swiper-button-next::after {
+    font-size: 25px;
+  }
+}
+@media (min-width: 576px) {
+  .carouselOne .swiper-button-prev, .carouselOne .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* about */
 .o-repeat__text {
   line-height: 30px;
@@ -458,8 +509,29 @@ section.picture img {
 }
 
 /* progress */
-.o-progress__carousel {
-  min-height: 100vh;
+.progress-construction .o-progress__swiper {
+  height: 100vh;
+}
+.progress-construction .o-progress__img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.progress-construction .o-progress__img-wrapper img {
+  min-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+.progress-construction .swiper-pagination-bullet {
+  opacity: 0.8;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.progress-construction .swiper-pagination-bullet-active {
+  background: #fff;
 }
 
 /* documents */
@@ -502,12 +574,56 @@ section.picture img {
 .c-btn__closemodal {
   top: 10px;
   right: 10px;
+  z-index: 10000;
+}
+
+.c-presentation__text {
+  color: #8c7342;
 }
 
 .c-presentation-modal__img {
   transform: rotate(6deg);
 }
 
+#presentation .order-lg-1 {
+  max-height: 250px;
+}
+#presentation .order-lg-1 img {
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (min-width: 992px) {
+  #presentation .order-lg-1 {
+    max-height: none;
+  }
+}
+
+.modal.c-presentation-modal__img-layout .c-presentation-modal__img {
+  transform: rotate(0);
+}
+
+.modal.c-presentation-modal__img-call .c-presentation-modal__img {
+  transform: rotate(0);
+}
+
 .c-presentation__modal-btn {
   background: var(--text-blue-color);
+}
+.c-presentation__modal-btn:hover, .c-presentation__modal-btn:focus, .c-presentation__modal-btn:active {
+  background: var(--text-blue-color) !important;
+}
+
+/* modalCarousel */
+.o-modal-carousel__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.o-modal-carousel__container .swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

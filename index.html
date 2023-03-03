@@ -39,7 +39,7 @@
 					</div>
 					<div class="navbar-call d-flex align-items-center">
 						<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap">8 (999) 999-99-99</a>
-						<button type="button" class="btn btn-gradient text-white" data-bs-toggle="modal" data-bs-target="#requestCall">
+						<button type="button" class="btn btn-gradient text-white" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -94,7 +94,7 @@
 								<div class="head__availability align-content-start d-flex align-items-center px-4 text-nowrap">Доступная ипотека!</div>
 							</div>
 							<div class="d-grid col-10 col-lg-5 mx-auto mx-lg-0 mt-lg-4 head__btn">
-								<button type="button" class="btn btn-gradient text-white fw-normal p-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#presentation">Скачать презентацию, PDF</button>
+								<button type="button" class="btn btn-gradient text-white fw-normal p-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
 							</div>
 							<div class="col-8 mx-auto pt-1">
 								<picture>
@@ -117,7 +117,7 @@
 									<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap fw-bold">8 (999) 999-99-99</a>
 								</div>
 								<div class="head__info-item d-sm-flex align-items-center mx-md-3 py-4">
-									<button type="button" class="btn o-head__btn btn-outline-dark text-dark py-3" data-bs-toggle="modal" data-bs-target="#requestCall">
+									<button type="button" class="btn o-head__btn btn-outline-dark text-dark py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
 										<i class="bi bi-telephone-fill"></i><span class="mx-2">Заказать звонок</span>
 									</button>
 								</div>
@@ -136,10 +136,27 @@
 			</div>
 		</section>
 		<section class="carouselOne">
-			<div class="container-fluid p-0 m-0">
-				<div class="col-12">
-					
+			<div class="container-fluid py-5 my-2">
+				
+				<div class="swiper-container o-swiper-carouselOne">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/carouselOne/1.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/2.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/3.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/4.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/5.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/6.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/7.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/8.jpg" class="img-fluid" alt=""></div>
+						<div class="swiper-slide"><img src="img/carouselOne/9.jpg" class="img-fluid" alt=""></div>
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
+
 			</div>
 		</section>
 		<section class="about" id="about">
@@ -204,7 +221,7 @@
 						<div class="o-more__call position-relative text-center">
 							<h4 class="fw-light o-more__call-text text-md-start">Или позвоните нам</h4>
 							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation">Скачать презентацию, PDF</button>
+							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
 							<div class="col-4 position-absolute o-more__arrow">
 								<img src="img/more/arrow.png" alt="">
 							</div>
@@ -240,17 +257,17 @@
 				<div class="row">
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<h2 class="fw-light text-center o-layouts__title">Планировки</h2>
-						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel">
+						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel" data-o-layout-num="One">
 							<img src="img/layouts/1.jpg" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#prevLayouts">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<h2 class="fw-light text-center o-layouts__title">Планировки</h2>
-						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel">
+						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel" data-o-layout-num="Two">
 							<img src="img/layouts/2.jpg" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#prevLayouts">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -258,17 +275,17 @@
 				<div class="row">
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<h2 class="fw-light text-center o-layouts__title">Планировки</h2>
-						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel">
-							<img src="img/layouts/1.jpg" class="img-fluid" alt="">
+						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel" data-o-layout-num="Three">
+							<img src="img/layouts/3.jpg" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#prevLayouts">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<h2 class="fw-light text-center o-layouts__title">Планировки</h2>
-						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel">
-							<img src="img/layouts/2.jpg" class="img-fluid" alt="">
+						<div class="border border-dark p-2 flex-fill" data-bs-toggle="modal" data-bs-target="#prevLayoutsCarousel" data-o-layout-num="Four">
+							<img src="img/layouts/4.jpg" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#prevLayouts">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-3 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -285,7 +302,7 @@
 						<div class="position-relative o-exc__z">
 							<h2 class="o-excursion__title">Приезжайте на экскурсию в ЖК «Кислород» Сочи</h2>
 							<div class="d-flex flex-column flex-md-row text-center align-items-center my-md-5">
-								<button type="button" class="btn btn-gradient text-white text-nowrap py-3 my-3 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#excursion">Записаться на экскурсию</button>
+								<button type="button" class="btn btn-gradient text-white text-nowrap py-3 my-3 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@show">Записаться на экскурсию</button>
 								<ol class="text-start">
 									<li>Пройдитесь по всей территории жилого комплекса.</li>
 									<li>Оцените качество строительства и благоустройства.</li>
@@ -334,7 +351,7 @@
 						<div class="o-more__call position-relative text-center">
 							<h4 class="fw-light o-more__call-text text-md-start">Или позвоните нам</h4>
 							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation">Скачать презентацию, PDF</button>
+							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
 							<div class="col-4 position-absolute o-more__arrow">
 								<img src="img/more/arrow.png" alt="">
 							</div>
@@ -360,7 +377,40 @@
 			<div class="vr position-absolute start-50 top-0" style="height: 100%;"></div>
 			<div class="container-fluid px-0 mx-0 position-relative o-progress__carousel py-5">
 				
-				
+				<div class="swiper o-progress__swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="o-progress__img-wrapper">
+								<img src="img/progressCarousel/10persent.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="o-progress__img-wrapper">
+								<img src="img/progressCarousel/40persent.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="o-progress__img-wrapper">
+								<img src="img/progressCarousel/79persent.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="o-progress__img-wrapper">
+								<img src="img/progressCarousel/92persent.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="o-progress__img-wrapper">
+								<img src="img/progressCarousel/last.jpg" alt="">
+							</div>
+						</div>
+						
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
 
 			</div>
 			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="bottom: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Планировки квартир от 15 до 66 м2">
@@ -377,7 +427,7 @@
 						<div class="o-more__call position-relative text-center text-md-start">
 							<h4 class="fw-light o-more__call-text">Или позвоните нам</h4>
 							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation">Рассчитать ипотеку</button>
+							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Рассчитать ипотеку</button>
 							<div class="col-4 position-absolute o-more__arrow">
 								<img src="img/more/arrow.png" alt="">
 							</div>
@@ -555,7 +605,7 @@
 					<div class="col-10 col-md-10 p-5 mx-auto text-white o-excursion__text">
 						<h2 class="o-excursion__title">Приглашаем Вас в наш офис, на показ объекта</h2>
 						<div class="d-flex flex-column flex-md-row text-center align-items-center my-md-5">
-							<button type="button" class="btn btn-gradient text-white text-nowrap py-3 my-3 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#excursion">Записаться на встречу</button>
+							<button type="button" class="btn btn-gradient text-white text-nowrap py-3 my-3 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@show">Записаться на встречу</button>
 							<ul class="text-start list-unstyled px-3">
 								<li>Мы будем рады провести для вас экскурсию по объекту и проконсультировать по всем вопросам</li>
 							</ul>
@@ -573,7 +623,7 @@
 						<h3 class="fw-light text-center text-md-start">г. Сочи, микрорайон Бытха ул. Ясногорская</h3>
 						<div class="o-more__call position-relative text-center text-md-start">
 							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#requestCall">Заказать звонок</button>
+							<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Заказать звонок</button>
 							<div class="col-4 position-absolute o-more__arrow">
 								<img src="img/more/arrow.png" alt="">
 							</div>
@@ -601,7 +651,7 @@
 
 
 	<!-- Modals -->
-	<div class="modal fade" id="requestCall" tabindex="-1" aria-labelledby="requestCallLabel" aria-hidden="true">
+	<!-- <div class="modal fade" id="requestCall" tabindex="-1" aria-labelledby="requestCallLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -617,8 +667,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+	</div> -->
+	<!-- <div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-body">
@@ -627,6 +677,7 @@
 						<img src="img/modals/1.png" class="c-presentation-modal__img" alt="">
 					</div>
 					<div class="row mt-5 mb-2 pt-5 px-3">
+
 						<p class="c-presentation__text text-center">Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong></p>
 						<form action="#" id="presentation__modal">
 							<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3" placeholder="+7 (999) 999-99-99" value="+7" aria-label="Номер пользователя">
@@ -637,57 +688,61 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="modal fade" id="prevLayoutsCarousel" tabindex="-1" aria-labelledby="prevLayoutsCarouselLabel" aria-hidden="true">
-		<div class="modal-dialog modal-fullscreen-sm-down">
-			<div class="modal-content">
-				<div class="modal-header">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-				</div>
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content position-relative">
+				<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
 				<div class="modal-body">
-				...
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="prevLayouts" tabindex="-1" aria-labelledby="prevLayoutsLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="prevLayoutsCallLabel">Заголовок модального окна</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-				</div>
-				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-				<button type="button" class="btn btn-primary">Сохранить изменения</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="excursion" tabindex="-1" aria-labelledby="excursionLabel" aria-hidden="true">	
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="excursionCallLabel">Заголовок модального окна</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-				</div>
-				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-				<button type="button" class="btn btn-primary">Сохранить изменения</button>
+				
+					<!-- Slider main container -->
+					<div class="swiper o-modal-carousel__container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src="img/layouts/" alt="">
+							</div>
+
+						</div>
+					
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+			<div class="modal-content position-relative">
+				<div class="modal-body">
+					<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="row row-cols-1 row-cols-lg-2 align-items-lg-center m-0 justify-content-center justify-contentlg-start ">
+						<div class="row order-lg-1 text-center px-lg-3 flex-lg-fill">
+							<img src="img/modals/1.png" class="c-presentation-modal__img" alt="">
+						</div>
+						<div class="row mt-4 mt-sm-3 mb-2 my-lg-4 pt-5 pt-lg-0 px-3">
+							<h2 class="text-center c-modal__title">Скачайте презентацию</h3>
+							<p class="c-presentation__text text-center">Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong></p>
+							<form action="#" id="presentation__modal" class="needs-validation" novalidate>
+								<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3" placeholder="+7 (999) 999-99-99" id="modalTel"  aria-label="Номер пользователя" required>
+								<button class="btn btn-lg text-white w-100 rounded-pill py-3 c-presentation__modal-btn" type="submit">Скачать презентацию</button>
+							</form>
+							<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<script src="vendors/inputmask.min.js"></script>
 	<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-	<!-- <script src="vendors/jquery/jquery.min.js"></script> -->
 	<script src="vendors/swiper/swiper-bundle.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
