@@ -148,7 +148,7 @@ exampleModalCarousel.addEventListener('show.bs.modal', event => {
 	const modalSlideWrapper = exampleModalCarousel.querySelector(".swiper-wrapper");
 	modalSlideWrapper.innerHTML = "";
 	// Обновляем содержимое модального окна.
-	for (let index = 1; index < count; index++) {
+	for (let index = 1; index <= count; index++) {
 		modalSlideWrapper.insertAdjacentHTML('beforeend', `<div class="swiper-slide">
 		<img src="img/layouts/${recipient}/${index}.jpg" class="img-fluid" alt="">
 	</div>`
