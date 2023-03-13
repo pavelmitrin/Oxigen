@@ -128,6 +128,7 @@ exampleModal.addEventListener('show.bs.modal', event => {
 	modalImg.setAttribute('src', `${img}`);
 	modalBtn.textContent = btnText;
 
+
 })
 
 /* modalCarousel */
@@ -186,4 +187,25 @@ Array.from(forms).forEach(form => {
 
       form.classList.add('was-validated')
 	}, false)
+})
+
+// Download presentation
+function get_file_url(url) {
+	
+	var link_url = document.createElement("a");
+	
+	link_url.download = url.substring((url.lastIndexOf("/") + 1), url.length);
+	link_url.href = url;
+	document.body.appendChild(link_url);
+	link_url.click();
+	document.body.removeChild(link_url);
+	delete link_url;
+
+}
+const btnModalPresentation = document.querySelector("#downloadPresentation");
+const form = document.querySelector("#presentation");
+form.addEventListener("submit", (e)=> {
+	if (e.target.closest(".c-presentation-modal__img-presentation")) {
+		get_file_url("../files/ЖК Кислород.pptx");
+	}
 })
