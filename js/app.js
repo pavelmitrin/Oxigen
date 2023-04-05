@@ -206,6 +206,12 @@ const btnModalPresentation = document.querySelector("#downloadPresentation");
 const form = document.querySelector("#presentation");
 form.addEventListener("submit", (e)=> {
 	if (e.target.closest(".c-presentation-modal__img-presentation")) {
-		get_file_url("../files/ЖК Кислород.pptx");
+		get_file_url("../files/кислород буклет.pdf");
 	}
 })
+
+
+function errorSendMail() {
+	const alertModal = document.querySelector('#alertMessage');
+	new bootstrap.Modal(alertModal).show()
+}
