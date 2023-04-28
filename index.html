@@ -20,26 +20,27 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-nav">
 	
-	<header class="header d-none">
+	<header class="header">
 		<nav class="navbar bg-white border-bottom fixed-top w-100">
 			<div class="container-fluid">
 				<div class="col-12 d-flex justify-content-between align-items-center">
 					<a href="#" class="navbar-brand d-flex align-items-center">
 						<img src="img/Logo.png" alt="Логотип" width="50" height="50" class="d-inline-block align-text-top">
-						<div class="d-inline-block px-3 brand-text">
+						<!-- <div class="d-inline-block px-3 brand-text">
 							<span class="d-block brand-title">Кислород</span>
 							<span class="d-block brand-subtitle">Жилой комплекс</span>
-						</div>
+						</div> -->
+						<img src="img/Logo2.png" class="d-none d-xl-inline-block px-2" alt="">
 					</a>
 					<div class="navbar-nav d-none d-lg-flex flex-row justify-content-around align-items-center flex-fill mx-4" id="navbar-nav">
-						<a class="nav-link px-1 text-center text-secondary" href="#about">О проекте</a>
-						<a class="nav-link px-1 text-center text-secondary" href="#layouts">Планировки</a>
-						<a class="nav-link px-1 text-center text-secondary" href="#safety">Застройщик</a>
-						<a class="nav-link px-1 text-center text-secondary" href="#documents">Документы</a>
+						<a class="nav-link px-1 text-center text-secondary o-header__logo-text" href="#about">О проекте</a>
+						<a class="nav-link px-1 text-center text-secondary o-header__logo-text" href="#layouts">Планировки</a>
+						<a class="nav-link px-1 text-center text-secondary o-header__logo-text" href="#safety">Застройщик</a>
+						<a class="nav-link px-1 text-center text-secondary o-header__logo-text" href="#documents">Документы</a>
 					</div>
 					<div class="navbar-call d-flex align-items-center">
-						<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap">8 (999) 999-99-99</a>
-						<button type="button" class="btn btn-gradient text-white" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap o-header__logo-text">8 (999) 999-99-99</a>
+						<button type="button" class="btn btn-gradient text-white text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -49,93 +50,132 @@
 	</header>
 	<main class="main">
 		<section class="head">
-			<div class="container-fluid">
-				<div class="row o-bg-light position-relative">
-					<div class="col-12 col-lg-6 mb-3 mb-lg-0">
-						<div class="row head__text px-3 px-lg-0">
-							<div class="row m-0 p-0 head__info flex-md-column-reverse align-items-center align-items-md-baseline">
-								<div class="col-6 mt-md-3">
-									<p class="head__subinfo fw-light">Квартиры <span class="text-nowrap">комфорт-класса</span> в Сочи <u>от застройщика</u></p>
-								</div>
-								<div class="col-6 col-md-10 d-md-flex justify-content-md-around">
-									<div class="head__info-item d-flex align-items-center position-relative">
-										<img src="img/head/pin.png" class="d-inline" width="40" height="40" alt="Место">
-										<div class="mx-1">
-											<h3 class="fw-light align-bottom">Сочи</h3>
-											<p class="head__info-item-text fs-6 fw-light text-center o-text-brown m-0 text-nowrap">ул. Ясногорская</p>
+			<!-- <div class="container-fluid position-relative">
+				<div class="col-6 position-absolute end-0">
+					<img src="img/head/headbg.jpg" class="img-fluid  head__bg-picture position-absolute end-0 top-0" alt="ЖК Кислород">
+				</div>
+				<div class="col-12">
+					<div class="container">
+						<div class="row o-bg-light position-relative">
+							<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+								<div class="row head__text px-3 px-lg-0">
+									<div class="row m-0 p-0 head__info flex-md-column-reverse align-items-center align-items-md-baseline">
+										<div class="col-6 mt-md-3">
+											<p class="head__subinfo fw-light">Квартиры <span class="text-nowrap">комфорт-класса</span> в Сочи <u>от застройщика</u></p>
 										</div>
-									</div>
-									<div class="head__info-item d-none d-sm-flex align-items-center mx-md-3 position-relative">
-										<img src="img/head/building.png" class="d-inline" width="40" height="40" alt="Здание">
-										<div class="mx-1">
-											<h3 class="fw-light align-bottom">Сдача объекта</h3>
-											<p class="head__info-item-text fs-6 fw-light text-center o-text-brown m-0 text-nowrap">|V квартал 2024 года</p>
+										<div class="col-6 col-md-10 d-md-flex justify-content-md-around">
+											<div class="head__info-item d-flex align-items-center position-relative">
+												<img src="img/head/pin.png" class="d-inline" width="40" height="40" alt="Место">
+												<div class="mx-1">
+													<h3 class="fw-light align-bottom">Сочи</h3>
+													<p class="head__info-item-text fs-6 fw-light text-center o-text-brown m-0 text-nowrap">ул. Ясногорская</p>
+												</div>
+											</div>
+											<div class="head__info-item d-none d-sm-flex align-items-center mx-md-3 position-relative">
+												<img src="img/head/building.png" class="d-inline" width="40" height="40" alt="Здание">
+												<div class="mx-1">
+													<h3 class="fw-light align-bottom">Сдача объекта</h3>
+													<p class="head__info-item-text fs-6 fw-light text-center o-text-brown m-0 text-nowrap">|V квартал 2024 года</p>
+												</div>
+											</div>
+											
 										</div>
 									</div>
 									
+									<h2 class="head__subtitle fs-6 fw-light o-text-brown">Сайт жилого комплекса</h2>
+									<h1 class="head__title fw-normal">ЖК «КИСЛОРОД»</h1>
+									<ul class="head__info px-lg-4">
+										<li class="fw-light">Комплекс на территории 6,7 Га.</li>
+										<li class="fw-light">Площади квартир от 15 до 66 м²</li>
+										<li class="fw-light">Работаем по ФЗ-214 «Договор долевого участия»</li>
+									</ul>
+								</div>
+								<div class="row head__presentation">
+									<div class="col-12 d-flex align-items-center head__sber">
+										<div class="col-6 col-md-5"><img src="img/head/sber.svg" class="img-fluid px-3" alt="Сбер"></div>
+										<div class="col-6 text-nowrap px-2 fw-light head__presentation-text">Проектное финансирование <span class="d-block">ПАО СБЕРБАНК</span></div>
+									</div>
+									<div class="col-10 d-sm-none pb-4 d-flex text-white">
+										<div class="head__persent align-content-end d-flex align-items-center justify-content-center">от 3%</div>
+										<div class="head__availability align-content-start d-flex align-items-center px-4 text-nowrap">Доступная ипотека!</div>
+									</div>
+									<div class="d-grid col-10 col-lg-5 mx-auto mx-lg-0 mt-lg-4 head__btn">
+										<button type="button" class="btn btn-gradient text-white fw-normal p-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
+									</div>
+									<div class="col-8 mx-auto pt-1">
+										<picture>
+											<source media="(min-width: 992px)" srcset="img/head/arrow2.png">
+											<img src="img/head/arrow1.png" class="img-fluid o-head__arrow" alt="">
+										</picture>
+									</div>
 								</div>
 							</div>
-							
-							<h2 class="head__subtitle fs-6 fw-light o-text-brown">Сайт жилого комплекса</h2>
-							<h1 class="head__title fw-normal">ЖК «КИСЛОРОД»</h1>
-							<ul class="head__info px-lg-4">
-								<li class="fw-light">Комплекс на территории 6,7 Га.</li>
-								<li class="fw-light">Площади квартир от 15 до 66 м²</li>
-								<li class="fw-light">Работаем по ФЗ-214 «Договор долевого участия»</li>
-							</ul>
-						</div>
-						<div class="row head__presentation">
-							<div class="col-12 d-flex align-items-center head__sber">
-								<div class="col-6 col-md-5"><img src="img/head/sber.svg" class="img-fluid px-3" alt="Сбер"></div>
-								<div class="col-6 text-nowrap px-2 fw-light head__presentation-text">Проектное финансирование <span class="d-block">ПАО СБЕРБАНК</span></div>
+							<div class="col-12 col-lg-6 mx-auto o-head-preview">
+								<img src="img/head/preview.png" class="img-fluid" alt="Карточка комплекса">
 							</div>
-							<div class="col-10 d-sm-none pb-4 d-flex text-white">
-								<div class="head__persent align-content-end d-flex align-items-center justify-content-center">от 3%</div>
-								<div class="head__availability align-content-start d-flex align-items-center px-4 text-nowrap">Доступная ипотека!</div>
+							<div class="d-none d-lg-block col-lg-2 mx-auto o-head__logo position-absolute top-0 start-50 translate-middle-x">
+								<img src="img/Logo.png" class="img-fluid" alt="Логотип">
 							</div>
-							<div class="d-grid col-10 col-lg-5 mx-auto mx-lg-0 mt-lg-4 head__btn">
-								<button type="button" class="btn btn-gradient text-white fw-normal p-3 text-nowrap" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
-							</div>
-							<div class="col-8 mx-auto pt-1">
-								<picture>
-									<source media="(min-width: 992px)" srcset="img/head/arrow2.png">
-									<img src="img/head/arrow1.png" class="img-fluid o-head__arrow" alt="">
-								</picture>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 mx-auto o-head-preview">
-						<img src="img/head/preview.png" class="img-fluid" alt="Карточка комплекса">
-					</div>
-					<div class="d-none d-lg-block col-lg-2 mx-auto o-head__logo position-absolute top-0 start-50 translate-middle-x">
-						<img src="img/Logo.png" class="img-fluid" alt="Логотип">
-					</div>
-					<div class="d-none d-lg-block col-lg-6 overflow-hidden position-relative">
-						<div class="row m-0 p-0 head__info d-flex align-items-md-baseline position-absolute top-0 end-0 justify-content-end o-head-bg__text">
-							<div class="col-md-10 w-100 d-md-flex justify-content-md-around">
-								<div class="head__info-item d-flex align-items-center">
-									<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap fw-bold">8 (999) 999-99-99</a>
+							<div class="d-none d-lg-block col-lg-6 overflow-hidden position-relative">
+								<div class="row m-0 p-0 head__info d-flex align-items-md-baseline position-absolute top-0 end-0 justify-content-end o-head-bg__text">
+									<div class="col-md-10 w-100 d-md-flex justify-content-md-around">
+										<div class="head__info-item d-flex align-items-center">
+											<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap fw-bold">8 (999) 999-99-99</a>
+										</div>
+										<div class="head__info-item d-sm-flex align-items-center mx-md-3 py-4">
+											<button type="button" class="btn o-head__btn btn-outline-dark text-dark py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+												<i class="bi bi-telephone-fill"></i><span class="mx-2">Заказать звонок</span>
+											</button>
+										</div>
+										
+									</div>
 								</div>
-								<div class="head__info-item d-sm-flex align-items-center mx-md-3 py-4">
-									<button type="button" class="btn o-head__btn btn-outline-dark text-dark py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
-										<i class="bi bi-telephone-fill"></i><span class="mx-2">Заказать звонок</span>
-									</button>
+								<div class="row position-absolute end-0 o-head__bid">
+									<div class="col-12 d-flex text-white">
+										<div class="head__persent align-content-end d-flex align-items-center justify-content-center text-nowrap">от 3%</div>
+										<div class="head__availability align-content-start d-flex align-items-center px-4 text-nowrap">Доступная ипотека!</div>
+									</div>
 								</div>
 								
 							</div>
 						</div>
-						<div class="row position-absolute end-0 o-head__bid">
-							<div class="col-12 d-flex text-white">
-								<div class="head__persent align-content-end d-flex align-items-center justify-content-center text-nowrap">от 3%</div>
-								<div class="head__availability align-content-start d-flex align-items-center px-4 text-nowrap">Доступная ипотека!</div>
+					</div>
+				</div>
+				
+				
+			</div> -->
+			
+
+				<div class="container container2 d-flex flex-column">
+
+					<div class="col-12 col-md-7 col-lg-5 text-center h-100 flex-fill d-flex flex-column justify-content-around o-head__bg ">
+						<p class="fs-5">Сдача объекта 4 квартал <span class="o-head__span">2024</span> года</p>
+						<p class="fs-5">Квартиры комфорт-класса в Сочи застройщика</p>
+						<p class="fs-5">Комплекс на территории 6,7Га</p>
+						<p class="fs-5">Площади квартир от 15 до 66 м2</p>
+						<p class="fs-5">Сочи ул. Ясногорская</p>
+					</div>
+
+				</div>
+		</section>
+		<section class="head__advertising my-0">
+			<div class="container">
+				<div class="row px-0 mx-0 ">
+					<div class="add d-flex flex-column">
+							<div class="col-12 col-md-5 col-lg-3 px-3 position-relative">
+								<div class="o-more__info o-head__img">
+									<img src="img/head/1.jpg" class="img-fluid w-100" alt="">
+								</div>
+								<img src="img/head/arrow2.png" class="o-head__arrow" alt="">
 							</div>
-						</div>
-						<img src="img/head/headbg.jpg" class="head__bg-picture" alt="ЖК Кислород">
+							<div class="col-12 col-md-5 col-lg-3 text-center mt-4 o-head__img-text">
+								<button type="button" class="btn btn-gradient text-white py-3" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
+							</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="carouselOne">
+		<section class="carouselOne mt-3">
 			<div class="container-fluid py-5 my-2">
 				
 				<div class="swiper-container o-swiper-carouselOne">
@@ -160,25 +200,25 @@
 			</div>
 		</section>
 		<section class="about" id="about">
-			<div class="container bg-white pt-5">
-				<div class="row align-items-center py-3 py-md-0">
-					<div class="col-12 col-md-6 mx-md-auto">
+			<div class="container bg-white">
+				<div class="row align-items-center py-md-0">
+					<div class="col-12 col-md-6 mx-md-auto py-2 py-md-0">
 						<h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3>
 						<h2 class="fw-light text-center text-md-start head__title">О проекте</h2>
 						<p class="fw-light text-center text-md-start o-repeat__text">ЖК «Кислород» расположился в экологически чистом районе. Жить в лесу, у моря и в центре города мечта? Нет, реальность. Морской воздух ароматы леса и горных трав наполняют комфортную городскую жизнь здоровьем.</p>
 					</div>
-					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto o-about__img-container">
-						<img src="img/about/one.jpg" class="o-about__img" alt="">
+					<div class="col-12 col-md-4 p-md-0 o-about__img-container">
+						<img src="img/about/one.jpg" class="o-about__img anim__item  _anim-no-hide" alt="">
 					</div>
 				</div>
 			</div>
 
 			<div class="container bg-white mt-5">
-				<div class="row align-items-baseline py-3 py-md-0">
-					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto o-about__img-container2 ">
-						<img src="img/about/two.jpg" class="o-about__img" alt="">
+				<div class="row align-items-center py-md-0">
+					<div class="col-12 col-md-5 p-md-0 mx-auto o-about__img-container2 ">
+						<img src="img/about/two.jpg" class="o-about__img anim__item  _anim-no-hide" alt="">
 					</div>
-					<div class="col-12 col-md-6 mx-md-auto">
+					<div class="col-12 col-md-6 mx-md-auto py-2 py-md-0">
 						<h3 class="o-text-brown fw-light text-center text-md-start">Жилого комплекса</h3>
 						<h2 class="fw-light text-center text-md-start head__title">Архитектура</h2>
 						<p class="fw-light text-center text-md-start o-repeat__text">Архитектура зданий разработана одним из востребованных архитектурных бюро, в стиле, как его называют авторы — «современная классика».</p>
@@ -228,13 +268,13 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto position-relative">
-						<img src="img/more/1.png" class="img-fluid" alt="">
-						<div class="col-10 col-sm-10 mx-sm-auto col-md-8 py-4 px-1 position-absolute top-50 start-50 translate-middle o-more__info text-center text-md-start">
-							<ul class="fw-bold d-inline-block mx-auto">
-								<li>План территории комплекса</li>
-								<li>Подробное описание инфраструктуры</li>
-								<li>Детальные планировки</li>
-							</ul>
+						
+						<div class="col-10 col-sm-10 mx-sm-auto col-md-10 py-4 px-1 o-more__info text-center text-md-start">
+							<div class="fw-bold d-inline-block mx-auto text-center px-4">
+								<p class="fs-4">План территории комплекса</p>
+								<p class="fs-4">Подробное описание инфраструктуры</p>
+								<p class="fs-4">Детальные планировки</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -246,7 +286,7 @@
 			</div>
 			<div class="vr position-absolute start-50 top-0" style="height: 100%;"></div>
 			<div class="container-fluid px-0 mx-0 position-relative">
-				<img src="img/picture.png" class="img-fluid" alt="">
+				<img src="img/picture.png" class="img-fluid w-100" alt="">
 			</div>
 			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="bottom: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Планировки квартир от 15 до 66 м2">
 				<i class="bi bi-info-circle-fill"></i>
@@ -294,7 +334,7 @@
 			<div class="container-fill px-0 mx-0 position-relative overflow-hidden o-excursion__block d-flex align-items-center justify-content-center">
 				<div class="row align-self-start">
 					<div class="col-12">
-						<img src="img/excursion.jpg" class="img-fill position-absolute top-0 start-0" alt="">
+						<img src="img/excursion.jpg" class="img-fill position-absolute top-0 start-0 o-img-fill" alt="">
 					</div>
 				</div>
 				<div class="row position-relative overflow-hidden">
@@ -314,23 +354,22 @@
 			</div>
 		</section>
 		<section class="safety py-5" id="safety">
-			<div class="container bg-white pt-5">
-				<div class="row align-items-center py-3 py-md-0">
-					<div class="col-12 col-md-6 mx-md-auto">
+			<div class="container bg-white">
+				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
+					<div class="col-12 col-md-8 mx-md-auto py-md-3">
 						<h3 class="o-text-brown fw-light text-center text-md-start">Безопасность</h3>
 						<h2 class="fw-light text-center text-md-start head__title">Охрана территории</h2>
 						<p class="fw-light text-center text-md-start o-repeat__text">Мы заботимся о безопасности, поэтому бдительные камеры днем и ночью следят за детскими площадками, лифтами, подъездами и парковками. Жилой комплекс «Кислород» - это охраняемая территория и безопасная среда для жизни и беззаботного детства.</p>
 					</div>
-					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto  position-relative">
-						<div class="col-12 px-2 mx-auto o-about__img-container"><img src="img/safety/one.jpg" class="o-about__img " alt=""></div>
-						<img src="img/safety/camera.png" alt="" class="position-absolute  o-safety__dopimg">
+					<div class="col-12 col-md-4 p-md-0 mx-auto o-about__img-container2 position-relative">
+						<img src="img/safety/one.jpg" class="o-about__img o-safety__img anim__item _anim-no-hide" alt="">
 					</div>
 				</div>
 			</div>
 
 			<div class="container bg-white mt-5">
-				<div class="row align-items-end py-3 py-md-0">
-					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto o-about__img-container2 d-flex justify-content-md-end position-relative">
+				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
+					<div class="col-12 col-md-5 py-2 p-md-0  o-about__img-container2 d-flex justify-content-md-end position-relative anim__item  _anim-no-hide">
 						<img src="img/safety/two.jpg" class="o-about__img o-safety__img" alt="">
 						<img src="img/safety/logo.png" alt="" class="position-absolute top-50 start-50 translate-middle o-safety__dopimg2">
 					</div>
@@ -358,13 +397,12 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto position-relative">
-						<img src="img/more/1.png" class="img-fluid" alt="">
-						<div class="col-10 col-sm-10 mx-sm-auto col-md-8 py-4 px-1 position-absolute top-50 start-50 translate-middle o-more__info text-center text-md-start">
-							<ul class="fw-bold d-inline-block mx-auto">
-								<li>План территории комплекса</li>
-								<li>Подробное описание инфраструктуры</li>
-								<li>Детальные планировки</li>
-							</ul>
+						<div class="col-10 col-sm-10 mx-sm-auto col-md-10 py-4 px-1 o-more__info text-center text-md-start">
+							<div class="fw-bold d-inline-block mx-auto text-center px-4">
+								<p class="fs-5">План территории комплекса</p>
+								<p class="fs-5">Подробное описание инфраструктуры</p>
+								<p class="fs-5">Детальные планировки</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -598,7 +636,7 @@
 			<div class="container-fill px-0 mx-0 position-relative overflow-hidden o-excursion__block d-flex align-items-center justify-content-center">
 				<div class="row align-self-start">
 					<div class="col-12">
-						<img src="img/office.jpg" class="img-fill position-absolute top-0 start-0" alt="">
+						<img src="img/office.jpg" class="img-fill position-absolute top-0 start-0 o-img-fill" alt="">
 					</div>
 				</div>
 				<div class="row position-relative overflow-hidden">
@@ -615,9 +653,9 @@
 			</div>
 		</section>
 		<section class="more contacts">
-			<div class="container bg-white py-5 position-relative">
+			<div class="container bg-white position-relative">
 				<div class="row align-items-center py-3 py-md-0">
-					<div class="col-12 col-md-5 mx-md-auto">
+					<div class="col-12 col-md-5 mx-md-auto py-5">
 						<h3 class="o-text-brown fw-light text-center text-md-start">ЖК Кислород</h3>
 						<h2 class="fw-light text-center text-md-start head__title">Наши контакты</h2>
 						<h3 class="fw-light text-center text-md-start">г. Сочи, микрорайон Бытха ул. Ясногорская</h3>
@@ -629,8 +667,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-7 py-2 p-md-0 mx-auto position-relative">
-						<img src="img/map.jpg" class="img-fluid" alt="">
+					<div class="col-12 col-md-7 py-2 p-md-0 mx-auto h-100 position-relative">
+						<img src="img/map.jpg" class="img-fluid h-100" alt="">
 					</div>
 				</div>
 			</div>
@@ -646,8 +684,10 @@
 		</section>
 	</main>
 	<footer class="footer">
-
 	</footer>
+	<button type="button" class="btn btn-primary position-fixed o-btn__absolute" data-bs-toggle="modal" data-bs-target="#addModal">
+		<i class="bi bi-fire"></i>
+	</button>
 
 
 	<!-- Modals -->
@@ -753,6 +793,28 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<button type="button" class="btn-close btn-close-white position-relative start-100 o-modal__btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			<div class="modal-content o-modal__bg overflow-hidden">
+				<div class="container">
+					<div class="row d-flex flex-column flex-lg-row">
+						<div class="col-12 col-lg-7">
+	
+						</div>
+						<div class="col-12 col-lg-5 px-3 py-5 o-modal__text">
+							<h3 class="fw-bold ">ЖК «КИСЛОРОД» - идеальное место, где встречаются горный и морской воздух.</h2>
+							<p class="mt-3 ">Эко-район со свежим горным воздухом.</p>
+							<p class=""><span class="fw-bold">7 минут до центра Сочи на автомобиле.</span></p>
+							<p class="">Ипотека от <span class="fw-bold">0,1% на весь срок.</span></p>
+							<button type="button" class="btn btn-gradient text-white py-3 mt-5" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Получить подборку</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

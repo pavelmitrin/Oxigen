@@ -33,10 +33,16 @@ const swiperOne = new Swiper('.o-swiper-carouselOne', {
       delay: 2500,
       disableOnInteraction: false,
    },
-	spaceBetween: 10,
+	spaceBetween: 60,
 	breakpoints: {
 		768: {
-			slidesPerView: 1.25
+			slidesPerView: 1.5
+		},
+		1200: {
+			slidesPerView: 1.75
+		},
+		1650: {
+			slidesPerView: 2
 		}
 	},
 	navigation: {
@@ -59,15 +65,15 @@ const swiper = new Swiper('.o-progress__swiper', {
 
 // toggle header
 function checkScroll() {
-	if (window.scrollY > 500) {
+	if (window.scrollY > 100) {
 		header.classList.remove("d-none");
 	} else {
 		header.classList.add("d-none");
 	}
 }
 const header = document.querySelector(".header");
-window.addEventListener('scroll', checkScroll);
-window.addEventListener('load', checkScroll);
+// window.addEventListener('scroll', checkScroll);
+// window.addEventListener('load', checkScroll);
 
 
 /* modal */
@@ -215,3 +221,39 @@ function errorSendMail() {
 	const alertModal = document.querySelector('#alertMessage');
 	new bootstrap.Modal(alertModal).show()
 }
+
+
+const allAnimItem = document.querySelectorAll('.anim__item');
+if (allAnimItem.length > 0) {
+	window.addEventListener("scroll", animScroll);
+	function animScroll() {
+		for (let index = 0; index < allAnimItem.length; index++) {
+			const animItem = allAnimItem[index];
+			const animItemHeigh = animItem.offsetHeight;
+			const animItemOffset = offset(animItem).top;
+			const animStart = 4;
+			
+			let animItemPoint = window.innerHeight - animItemHeigh / animStart;
+			
+			if (animItemHeigh > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+			}
+
+			if (scrollY > (animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeigh)) {
+				animItem.classList.add('_active');
+			} else {
+				if (!animItem.classList.contains('_anim-no-hide')) {
+					animItem.classList.remove('_active');
+				}
+			}
+			
+		}
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
+	}
+}
+animScroll();
