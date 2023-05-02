@@ -72,6 +72,21 @@ function checkScroll() {
 	}
 }
 const header = document.querySelector(".header");
+window.addEventListener('load', () => {
+	if (window.innerWidth < 992) {
+		checkScroll();
+	}
+})
+window.addEventListener('scroll', () => {
+	if (window.innerWidth < 992) {
+		checkScroll();
+	}
+});
+window.addEventListener('resize', () => {
+	if (window.innerWidth < 992) {
+		checkScroll();
+	}
+});
 // window.addEventListener('scroll', checkScroll);
 // window.addEventListener('load', checkScroll);
 
