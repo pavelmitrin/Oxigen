@@ -2,6 +2,7 @@
 /* Повторяющиеся */
 html {
   scroll-padding-top: 60px;
+  overflow-x: hidden;
 }
 
 .o-text-brown {
@@ -25,6 +26,7 @@ body {
   background: rgb(163, 215, 251);
   background: linear-gradient(90deg, rgb(163, 215, 251) 0%, rgb(255, 255, 255) 50%, rgb(163, 215, 251) 100%);
   font-family: var(--font-circle) !important;
+  overflow-x: hidden;
 }
 
 section:not(:first-child) {
