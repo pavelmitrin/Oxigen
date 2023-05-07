@@ -82,7 +82,7 @@ section:not(:first-child) {
 
 /* head */
 .head {
-  background: url("../img/head/headbg.jpg") 0 0/cover no-repeat;
+  background: url("../img/head/headbg.webp") 0 0/cover no-repeat;
   min-height: 100vh;
   text-shadow: 0 0 10px #000;
 }
@@ -139,6 +139,7 @@ section:not(:first-child) {
   margin: 0 10px 0 0;
   transform: scale(1.7);
 }
+
 .head__title {
   font-size: 37px;
 }
@@ -348,7 +349,6 @@ img.head__bg-picture:hover {
   }
 }
 
-/* head__advertising */
 /* swiperOne */
 .carouselOne {
   height: auto;
@@ -446,34 +446,6 @@ img.head__bg-picture:hover {
   }
 }
 
-/* .o-about__info {
-	line-height: 52px;
-	font-size: 40px;
-	@media (min-width:576px) {
-		& {
-			font-size: 46px;
-			line-height: 60px;
-		}
-	}
-	@media (min-width:768px) {
-		& {
-			font-size: 35px;
-			line-height: 46px;
-		}
-	}
-	@media (min-width:992px) {
-		& {
-			font-size: 30px;
-			line-height: 39px;
-		}
-	}
-	@media (min-width:1200px) {
-		& {
-			font-size: 100px;
-			line-height: 120px;
-		}
-	}
-} */
 .o-about__subinfo, .o-about__info {
   font-size: 24px;
   line-height: 37px;
@@ -791,7 +763,7 @@ button.btn.o-btn-border {
 }
 
 .o-modal__bg {
-  background: url("../img/66.jpg") 0 0/cover no-repeat;
+  background: url("../img/66.webp") 0 0/cover no-repeat;
 }
 
 .o-modal__text {

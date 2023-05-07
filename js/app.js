@@ -104,32 +104,37 @@ exampleModal.addEventListener('show.bs.modal', event => {
 		call: {
 			name: "Обратный звонок",
 			text: "Как правило перезваниваем в течение 15 минут",
-			img: "img/modals/phone.png",
+			img: "img/modals/phone.webp",
 			btnText: "Отправить",
+			btnName: "call",
 		},
 		presentation: {
 			name: "Скачайте презентацию",
 			text: "Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong>",
-			img: "img/modals/1.png",
+			img: "img/modals/1.webp",
 			btnText: "Скачать презентацию",
+			btnName: "presentation",
 		},
 		layout: {
 			name: "Планировки и цены",
 			text: "Наш менеджер свяжется, уточнит желаемые планировки и отправит информацию",
-			img: "img/modals/plans.jpg",
+			img: "img/modals/plans.webp",
 			btnText: "Получить",
+			btnName: "price",
 		},
 		show: {
 			name: "Запись на показ",
 			text: "Наш менеджер свяжется и Вы запланируете удобную дату и время показа",
-			img: "img/modals/phone.png",
+			img: "img/modals/phone.webp",
 			btnText: "Отправить",
+			btnName: "record",
 		},
 	}
 	let name =  allWhateverValue[recipient0].name;
 	let text = allWhateverValue[recipient0].text;
 	let img = allWhateverValue[recipient0].img;
 	let btnText = allWhateverValue[recipient0].btnText;
+	let btnName = allWhateverValue[recipient0].btnName;
 
 	//
 	// Обновляет содержимое модального окна.
@@ -147,9 +152,8 @@ exampleModal.addEventListener('show.bs.modal', event => {
 	modalTitle.textContent = name;
 	modalText.innerHTML = `${text}`;
 	modalImg.setAttribute('src', `${img}`);
+	modalBtn.setAttribute('value', btnName);
 	modalBtn.textContent = btnText;
-
-
 })
 
 /* modalCarousel */
