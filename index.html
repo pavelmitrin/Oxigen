@@ -19,7 +19,7 @@
 	<title>ЖК Кислород</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-nav">
-	<header class="header">
+	<header class="header d-none">
 		<nav class="navbar bg-white border-bottom fixed-top w-100">
 			<div class="container-fluid">
 				<div class="col-12 d-flex justify-content-between align-items-center w-100">
@@ -34,8 +34,11 @@
 						<a class="nav-link px-1 text-center text-secondary o-header__logo-text" href="#documents">Документы</a>
 					</div>
 					<div class="navbar-call d-flex align-items-center">
-						<a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap o-header__logo-text">8 (999) 999-99-99</a>
-						<button type="button" class="btn btn-gradient text-white text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<!-- <a href="tel:+79999999999" class="d-none d-md-block mx-4 text-dark text-decoration-none text-uppercase text-nowrap btn btn-outline-secondary fz16">8 (999) 999-99-99</a> -->
+						<button type="button" class="d-none d-md-block btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+							<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+						</button>
+						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -45,71 +48,72 @@
 	</header>
 	<main class="main">
 		<section class="head">
-			<div class="container container2 d-flex flex-column">
-
-					
-				<div class="row text-white">
-					<div class="col-12 col-md-8 col-lg-7 h-100 o-head__bg">
-						<h2 class="text-decoration-underline text-center">Квартиры бизнес класса с видом на море <span class="text-nowrap fw-bold text-uppercase d-xl-block text-center">ЖК «Кисл<span class="fw-bolder o-text-green">q</span>род»</span></h2>
-						<div class="o-head__list mt-5">
-							<p class="fs-5"> 
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Строительство ведется по <span class="text-decoration-underline">214-ФЗ</span> с использованием <span class="text-decoration-underline">экскроу-счетов</span> по проектному финансированию <span class="text-decoration-underline">ПАО СБЕРБАНК</span>
-							</p>
-							<p class="fs-5">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Сдача обьекта <span class="text-decoration-underline">IV квартал 2024 года​</span>
-							</p>
-							<p class="fs-5">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Ипотека <span class="text-decoration-underline">от 4,7 %</span>
-							</p>
-							<p class="fs-5">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Стоимость квартир <span class="text-decoration-underline">от 6,8 млн</span>
-							</p>
-							<p class="fs-5">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Площади квартир <span class="text-decoration-underline">от 15 до 66 м2</span>
-							</p>
-							<p class="fs-5">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-								</svg>
-								Территория комплекса <span class="text-decoration-underline">6,7 Га</span>
-							</p>
+			<div class="container-fluid">
+				<div class="container container2 d-flex flex-column">
+					<div class="row text-white">
+						<div class="col-12 col-md-8 col-lg-7 h-100 o-head__bg">
+							<h2 class="text-decoration-underline text-center pt-3">Квартиры бизнес класса с видом на море <span class="text-nowrap fw-bold text-uppercase d-xl-block text-center">ЖК «Кислород»</span></h2>
+							<div class="o-head__list my-3 px-2 px-md-0">
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4"> Строительство ведется по <span class="text-decoration-underline">214-ФЗ</span> с использованием <span class="text-decoration-underline">экскроу-счетов</span> по проектному финансированию <span class="text-decoration-underline">ПАО СБЕРБАНК</span></p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4">Сдача обьекта <span class="text-decoration-underline">IV квартал 2024 года​</span></p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4">Ипотека <span class="text-decoration-underline">от 4,7 %</span></p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4">Стоимость квартир <span class="text-decoration-underline">от 6,8 млн</span></p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4">Площади квартир <span class="text-decoration-underline">от 15 до 66 м2</span></p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p class="fs-4 mb-0">Территория комплекса <span class="text-decoration-underline">6,7 Га</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-8 col-lg-5 text-end d-none d-lg-block">
+						<p class="o-head__shadow fs-5 d-inline-flex align-items-center justify-content-end"> <img src="img/point.webp" alt="" width="30px" class="mx-2"> <span>Сочи, мкр. Бытха​ <span class="d-inline d-lg-block">ул. Ясногорская</span></span></p>
+	
 						</div>
 					</div>
-					<div class="col-12 col-md-8 col-lg-5 text-end d-none d-lg-block">
-					<p class="o-head__shadow">Сочи, мкр. Бытха​ <span class="d-inline d-lg-block">ул. Ясногорская</span></p>
-
-					</div>
-				</div>
-
-
-
-				<div class="row pt-0 mt-0 overflow-hidden">
-					<div class="col-12 col-md-8 col-lg-7 o-head__bg">
-						<div class="col-12 col-md-8  o-head__img">
-							<img src="img/presentation.webp" class="img-fluid w-100" alt="">
-						</div>
-						<div class="col-12 col-md-8 col-lg-7 text-center py-4 o-head__img-text position-relative ">
-							<button type="button" class="btn btn-gradient text-white py-2 " data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
-							<img src="img/head/arrow4.webp" class="position-absolute o-head__arrow" alt="">
+	
+	
+	
+					<div class="row pt-0 mt-0 overflow-hidden">
+						<div class="col-12 col-md-8 col-lg-7 o-head__bg">
+							<div class="col-12 o-head__img d-flex flex-column flex-lg-row align-items-center">
+								<img src="img/presentation.webp" class="img-fluid o-head__presentation" alt="">
+								<button type="button" class="btn btn-gradient text-white py-2 " data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							</div>
+							<div class="col-12 col-md-8 col-lg-7 text-center py-4 o-head__img-text position-relative ">
+								<img src="img/head/arrow1.webp" class="position-absolute o-head__arrow" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</section>
 		
 		<section class="carouselOne pt-0 mt-0">
@@ -139,14 +143,14 @@
 
 		<section class="about" id="about">
 			<div class="container bg-white box-shadow">
-				<div class="row align-items-center py-md-0">
-					<div class="col-12 col-md-6 mx-md-auto py-2 py-md-0">
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
 						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title">О проекте</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">ЖК «Кислород» расположился в самом сердце Сочи- жилом районе Бытха. Он окружен лесом, а добраться до моря или до центра города выйдет порядком 10 минут. Несмотря на городскую жизнь, воздух здесь наполнен ароматом горных трав, морским бризом. Комфортная прохлада леса будет выручать в особенно знойные дни.</p>
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">О проекте</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">ЖК «Кислород» расположился в самом сердце Сочи- жилом районе Бытха. Он окружен лесом, а добраться до моря или до центра города выйдет порядком 10 минут. Несмотря на городскую жизнь, воздух здесь наполнен ароматом горных трав, морским бризом. Комфортная прохлада леса будет выручать в особенно знойные дни.</p>
 					</div>
-					<div class="col-12 col-md-4 py-3 p-md-0 o-about__img-container">
-						<img src="img/about/one.webp" class="o-about__img anim__item  _anim-no-hide" alt="">
+					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container">
+						<img src="img/about/one.webp" class="o-about__img anim__item  _anim-no-hide h-100" alt="">
 					</div>
 				</div>
 			</div>
@@ -178,22 +182,79 @@
 			</div>
 
 			<div class="container bg-white box-shadow">
-				<div class="row align-items-center py-md-0">
-					<div class="col-12 col-md-5  py-3 p-md-0 mx-auto o-about__img-container2 ">
-						<img src="img/about/two.webp" class="o-about__img anim__item  _anim-no-hide" alt="">
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-5  py-3 p-md-0 mx-0 o-about__img-container2 ">
+						<img src="img/about/two.webp" class="o-about__img anim__item  _anim-no-hide h-100" alt="">
 					</div>
-					<div class="col-12 col-md-6 mx-md-auto py-2 py-md-0">
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
 						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Жилого комплекса</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title">Инфраструктура</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">На территории комплекса находится все, что нужно для полноценной счастливой жизни. Для детей  образовательная школа, муниципальный детский сад, муниципальная детская поликлиника. Магазины и салоны красоты, фитнес.  В пешей доступности расположен парк для неспешных прогулок с семьей или любимыми домашними питомцами.</p>
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">Инфраструктура</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">На территории комплекса находится все, что нужно для полноценной счастливой жизни. Для детей  образовательная школа, муниципальный детский сад, муниципальная детская поликлиника. Магазины и салоны красоты, фитнес.  В пешей доступности расположен парк для неспешных прогулок с семьей или любимыми домашними питомцами.</p>
 					</div>
 				</div>
 			</div>
 
 			
 		</section>
+
+		<section class="o-presentation">
+			<div class="container bg-white box-shadow py-3 py-lg-3">
+				<div class="row row-cols-md-2 align-items-start">
+					<div class="col-12 col-md-6">
+						<div class="o-pr__buttons text-center">
+							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							</button>
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+							</button>
+							
+						</div>
+						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
+							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
+						</div>
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column">
+						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+						<div class="o-pr__text order-2 order-md-1">
+							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
+							<div class="o-pr__list">
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Коллекция планировочных решений</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Проект комплексного развития территории</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Социальная инфраструктура</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>О застройщике</p>
+								</div>
+							</div>
+						</div>
+						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		
-		<section class="presentation-block o-pr">
+		<!-- <section class="presentation-block o-pr">
 			<div class="container box-shadow py-3 py-lg-4">
 				<div class="row rol-cols-md-2 align-items-center">
 					<div class="col-12 col-md-6">
@@ -202,7 +263,6 @@
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
 							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
-							<!-- <a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a> -->
 						</div>
 						<div class="o-pr__presentation p-lg-3">
 							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
@@ -211,25 +271,21 @@
 					<div class="col-12 col-md-6 d-inline-flex flex-column justify-content-between">
 						<ul class="fs-4 order-1 order-lg-0">
 							<li class="my-lg-4 fw-light">Коллекция планировочных решений</li>
-							<li class="my-lg-4 fw-light">Провект комплексного развития территории</li>
+							<li class="my-lg-4 fw-light">Проект комплексного развития территории</li>
 							<li class="my-lg-4 fw-light">Социальная инфраструктура</li>
 							<li class="my-lg-4 fw-light">О застройщике</li>
 						</ul>
 
 						<div class="o-pr-presentation__btn position-relative">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="picture position-relative">
-			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="top: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Подробнее о комплексе вы можете узнать у наших менеджеров, позвоните нам или оставьте заявку на сайте">
-				<i class="bi bi-info-circle-fill"></i>
-			</div>
-			<div class="vr position-absolute start-50 top-0" style="height: 100%;"></div>
 			<div class="container-fluid px-0 mx-0 position-relative">
 				<img src="img/picture.webp" class="img-fluid w-100" alt="">
 
@@ -239,34 +295,33 @@
 						<p class="fs-3">До моря и центра города 10 минут</p>
 					</div>
 					<div class="o-picture__buttons text-center">
-						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Забронировать</button>
-						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0">8 (999) 999-99-99</a>
+						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16">8 (999) 999-99-99</a>
+						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+						</button>
 
 					</div>
 				</div>
 
-			</div>
-			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="bottom: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Планировки квартир от 15 до 66 м2">
-				<i class="bi bi-info-circle-fill"></i>
-			</div>
+			</div>	
 		</section>
 
 		<section class="layouts" id="layouts">
-			<div class="container  py-2 pt-5 my-5 position-relative">
+			<div class="container py-2 position-relative">
 				<div class="row">
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/1.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/2.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -278,14 +333,14 @@
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/3.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/4.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -297,14 +352,14 @@
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/5.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/6.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -316,49 +371,106 @@
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/7.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/8.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Смотреть планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		
 		<section class="safety py-5" id="safety">
+
 			<div class="container bg-white box-shadow">
-				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
-					<div class="col-12 col-md-8 mx-md-auto py-md-3">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Безопасность</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title text-uppercase">Ремонт White Box</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">Мы создаем для вас уникальное пространство, в котором вы сможете воплотить в реальность любые дизайнерские задумки. Мы сделаем основные ремонтные работы – оштукатурим и зашпатлюем стены, установим натяжной потолок и осветительные приборы. Вы сделаете ремонт своей мечты с чистого листа.</p>
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
+						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">Ремонт White Box</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">Мы создаем для вас уникальное пространство, в котором вы сможете воплотить в реальность любые дизайнерские задумки. Мы сделаем основные ремонтные работы – оштукатурим и зашпатлюем стены, установим натяжной потолок и осветительные приборы. Вы сделаете ремонт своей мечты с чистого листа.</p>
 					</div>
-					<div class="col-12 col-md-4 p-md-0 mx-auto o-about__img-container2 position-relative">
-						<img src="img/safety/one.webp" class="o-about__img o-safety__img anim__item _anim-no-hide" alt="">
+					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container">
+						<img src="img/safety/one.webp" class="o-about__img o-safety__img anim__item _anim-no-hide w-100" alt="">
 					</div>
 				</div>
 			</div>
 
 			<div class="container bg-white box-shadow mt-5">
-				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
-					<div class="col-12 col-md-5 py-2 p-md-0  o-about__img-container2 d-flex justify-content-md-end position-relative anim__item  _anim-no-hide">
-						<img src="img/safety/two.webp" class="o-about__img o-safety__img" alt="">
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container d-flex justify-content-lg-end position-relative anim__item  _anim-no-hide">
+						<img src="img/safety/two.webp" class="o-about__img o-safety__img w-100" alt="">
 						<img src="img/safety/logo.webp" alt="" class="position-absolute top-50 start-50 translate-middle o-safety__dopimg2">
 					</div>
-					<div class="col-12 col-md-6 mx-md-auto">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">«AVA group»</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title text-uppercase">Ремонт «под ключ»</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">Если хотите, мы сами сделаем современный ремонт вашей квартиры под ключ. Стены, пол, потолок, освещение и сантехника будут готовы к вашему приходу. Вам останется только выбрать мебель.</p>
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
+						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">Ремонт «под ключ»</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">Если хотите, мы сами сделаем современный ремонт вашей квартиры под ключ. Стены, пол, потолок, освещение и сантехника будут готовы к вашему приходу. Вам останется только выбрать мебель.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="presentation-block o-pr my-5">
+
+		<section class="o-presentation">
+			<div class="container bg-white box-shadow py-3 py-lg-3">
+				<div class="row row-cols-md-2 align-items-start">
+					<div class="col-12 col-md-6">
+						<div class="o-pr__buttons text-center">
+							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							</button>
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+							</button>
+						</div>
+						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
+							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
+						</div>
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column">
+						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+						<div class="o-pr__text order-2 order-md-1">
+							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
+							<div class="o-pr__list">
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Коллекция планировочных решений</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Проект комплексного развития территории</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Социальная инфраструктура</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>О застройщике</p>
+								</div>
+							</div>
+						</div>
+						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="presentation-block o-pr my-5">
 			<div class="container box-shadow py-3 py-lg-4">
 				<div class="row rol-cols-md-2 align-items-center">
 					<div class="col-12 col-md-6">
@@ -367,8 +479,6 @@
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
 							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
-
-							<!-- <a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a> -->
 						</div>
 						<div class="o-pr__presentation p-lg-3">
 							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
@@ -377,19 +487,19 @@
 					<div class="col-12 col-md-6 d-inline-flex flex-column justify-content-between">
 						<ul class="fs-4 order-1 order-lg-0">
 							<li class="my-lg-4 fw-light">Коллекция планировочных решений</li>
-							<li class="my-lg-4 fw-light">Провект комплексного развития территории</li>
+							<li class="my-lg-4 fw-light">Проект комплексного развития территории</li>
 							<li class="my-lg-4 fw-light">Социальная инфраструктура</li>
 							<li class="my-lg-4 fw-light">О застройщике</li>
 						</ul>
 
 						<div class="o-pr-presentation__btn position-relative">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="picture position-relative">
 			
@@ -402,9 +512,10 @@
 						<p class="fs-3">Записаться на индивидуальную презентацию</p>
 					</div>
 					<div class="o-picture__buttons text-center">
-						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Забронировать</button>
-						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0">8 (999) 999-99-99</a>
-
+						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16">8 (999) 999-99-99</a>
+						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+						</button>
 					</div>
 				</div>
 
@@ -441,35 +552,93 @@
 		</section>
 
 		<section class="safety py-5">
+
 			<div class="container bg-white box-shadow">
-				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
-					<div class="col-12 col-md-8 mx-md-auto py-md-3">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Безопасность</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title text-uppercase">Преимущества</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">Для удобства парковки автомобиля на территории ЖК предусмотрен многоуровневый паркинг на 1315 машин. Мы позаботились о безопасности наших жителей, поэтому бдительные камеры днем и ночью следят за придомовой территорией, детскими площадками, лифтами, подъездами и парковками.</p>
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
+						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">Преимущества</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">Для удобства парковки автомобиля на территории ЖК предусмотрен многоуровневый паркинг на 1315 машин. Мы позаботились о безопасности наших жителей, поэтому бдительные камеры днем и ночью следят за придомовой территорией, детскими площадками, лифтами, подъездами и парковками.</p>
 					</div>
-					<div class="col-12 col-md-4 p-md-0 mx-auto o-about__img-container2 position-relative">
+					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container">
 						<img src="img/safety/one.webp" class="o-about__img o-safety__img anim__item _anim-no-hide" alt="">
 					</div>
 				</div>
 			</div>
 
+
 			<div class="container bg-white box-shadow mt-5">
-				<div class="row align-items-center py-3 py-md-0 overflow-hidden o-safety__maxheight">
-					<div class="col-12 col-md-5 py-2 p-md-0  o-about__img-container2 d-flex justify-content-md-end position-relative anim__item  _anim-no-hide">
+				<div class="row align-items-center py-lg-0">
+					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container d-flex justify-content-lg-end position-relative anim__item  _anim-no-hide">
 						<img src="img/safety/two.webp" class="o-about__img o-safety__img" alt="">
 						<img src="img/safety/logo.webp" alt="" class="position-absolute top-50 start-50 translate-middle o-safety__dopimg2">
 					</div>
-					<div class="col-12 col-md-6 mx-md-auto">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">«AVA group»</h3> -->
-						<h2 class="fw-light text-center text-md-start fw-bolder head__title text-uppercase">О Застройщике</h2>
-						<p class="fw-light text-center text-md-start o-repeat__text">AVA Group — инвестиционно-строительный холдинг, основанный в 2007 году. Штаб-квартира расположена в Краснодаре. Компания входит в рейтинг ТОП-30 РФ по объёмам жилищного строительства и ТОП-5 застройщиков Краснодарского края. Один из лидеров в сфере строительства и управления объектами недвижимости, член «Российской гильдии управляющих и девелоперов» и Ассоциации девелоперов Краснодарского края.</p>
+					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
+						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
+						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">О Застройщике</h2>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5 mb-0">AVA Group — инвестиционно-строительный холдинг, основанный в 2007 году. Штаб-квартира расположена в Краснодаре. Компания входит в рейтинг ТОП-30 РФ по объёмам жилищного строительства и ТОП-5 застройщиков Краснодарского края. Один из лидеров в сфере строительства и управления объектами недвижимости, член «Российской гильдии управляющих и девелоперов» и Ассоциации девелоперов Краснодарского края.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="presentation-block o-pr my-2">
+
+		<section class="o-presentation">
+			<div class="container bg-white box-shadow py-3 py-lg-3">
+				<div class="row row-cols-md-2 align-items-start">
+					<div class="col-12 col-md-6">
+						<div class="o-pr__buttons text-center">
+							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							</button>
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+							</button>
+						</div>
+						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
+							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
+						</div>
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column">
+						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+						<div class="o-pr__text order-2 order-md-1">
+							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
+							<div class="o-pr__list">
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Коллекция планировочных решений</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Проект комплексного развития территории</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>Социальная инфраструктура</p>
+								</div>
+								<div class="d-flex align-items-baseline">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+									</svg>
+									<p>О застройщике</p>
+								</div>
+							</div>
+						</div>
+						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="presentation-block o-pr my-2">
 			<div class="container box-shadow py-3 py-lg-4">
 				<div class="row rol-cols-md-2 align-items-center">
 					<div class="col-12 col-md-6">
@@ -478,7 +647,6 @@
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
 							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
-							<!-- <a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a> -->
 						</div>
 						<div class="o-pr__presentation p-lg-3">
 							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
@@ -487,25 +655,21 @@
 					<div class="col-12 col-md-6 d-inline-flex flex-column justify-content-between">
 						<ul class="fs-4 order-1 order-lg-0">
 							<li class="my-lg-4 fw-light">Коллекция планировочных решений</li>
-							<li class="my-lg-4 fw-light">Провект комплексного развития территории</li>
+							<li class="my-lg-4 fw-light">Проект комплексного развития территории</li>
 							<li class="my-lg-4 fw-light">Социальная инфраструктура</li>
 							<li class="my-lg-4 fw-light">О застройщике</li>
 						</ul>
 
 						<div class="o-pr-presentation__btn position-relative">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Скачать презентацию, PDF</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="progress-construction position-relative">
-			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="top: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Подробнее о комплексе вы можете узнать у наших менеджеров, позвоните нам или оставьте заявку на сайте">
-				<i class="bi bi-info-circle-fill"></i>
-			</div>
-			<div class="vr position-absolute start-50 top-0" style="height: 100%;"></div>
 			<div class="container-fluid px-0 mx-0 position-relative o-progress__carousel py-5">
 				
 				<div class="swiper o-progress__swiper">
@@ -543,9 +707,6 @@
 					<div class="swiper-pagination"></div>
 				</div>
 
-			</div>
-			<div class="position-absolute o-rep__infoButton d-flex align-items-center justify-content-center" style="bottom: -82px;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Планировки квартир от 15 до 66 м2">
-				<i class="bi bi-info-circle-fill"></i>
 			</div>
 		</section>
 
@@ -737,9 +898,10 @@
 						<p class="fs-3 fw-bold">Приглашаем в наш офис на индивидуальную презентацию</p>
 					</div>
 					<div class="o-picture__buttons text-center">
-						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Забронировать</button>
-						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0">8 (999) 999-99-99</a>
-
+						<a href="tel:89999999999" type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16">8 (999) 999-99-99</a>
+						<button type="button" class="btn btn-gradient text-white py-2 mx-3 my-2 my-md-0 fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+						</button>
 					</div>
 				</div>
 

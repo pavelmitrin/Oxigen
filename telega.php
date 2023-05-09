@@ -34,6 +34,7 @@ $chat_id = "-923288912";
 
 //Выводим сообщение об успешной отправке
    if ($sendToTelegram) {
+		 
 		header('location: /');
 	} else {
 			echo '<script>

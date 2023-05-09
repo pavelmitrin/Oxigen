@@ -73,19 +73,13 @@ function checkScroll() {
 }
 const header = document.querySelector(".header");
 window.addEventListener('load', () => {
-	if (window.innerWidth < 992) {
-		checkScroll();
-	}
+	checkScroll();
 })
 window.addEventListener('scroll', () => {
-	if (window.innerWidth < 992) {
-		checkScroll();
-	}
+	checkScroll();
 });
 window.addEventListener('resize', () => {
-	if (window.innerWidth < 992) {
-		checkScroll();
-	}
+	checkScroll();
 });
 // window.addEventListener('scroll', checkScroll);
 // window.addEventListener('load', checkScroll);
@@ -154,43 +148,6 @@ exampleModal.addEventListener('show.bs.modal', event => {
 	modalImg.setAttribute('src', `${img}`);
 	modalBtn.setAttribute('value', btnName);
 	modalBtn.textContent = btnText;
-})
-
-/* modalCarousel */
-const exampleModalCarousel = document.getElementById('prevLayoutsCarousel');
-exampleModalCarousel.addEventListener('show.bs.modal', event => {
-	// Кнопка, которая активировала модальное окно
-	const button = event.relatedTarget
-	// Извлекает информацию из атрибутов data-bs-*
-	const recipient = button.getAttribute('data-o-layout-num');
-	/* data */
-	const countImage = {
-		One: 4,
-		Two: 4,
-		Three: 4,
-		Four: 4,
-	}
-	let count = countImage[recipient];
-	const modalSlideWrapper = exampleModalCarousel.querySelector(".swiper-wrapper");
-	modalSlideWrapper.innerHTML = "";
-	// Обновляем содержимое модального окна.
-	for (let index = 1; index <= count; index++) {
-		modalSlideWrapper.insertAdjacentHTML('beforeend', `<div class="swiper-slide">
-		<img src="img/layouts/${recipient}/${index}.jpg" class="img-fluid" alt="">
-	</div>`
-		)
-	}
-
-
-	const ModalSwiper = new Swiper('.o-modal-carousel__container', {
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	slidesPerView: 1,
-	centeredSlides: true,
-});
 })
 
 /* inputMask */
