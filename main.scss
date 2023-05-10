@@ -138,8 +138,13 @@ section:not(:first-child) {
 	background: transparent !important;
 	text-shadow: none;
 }
+section.picture {
+	.o-btn-tel {
+		border-color: rgba($color: #fff, $alpha: .7) !important;
+	}
+}
 .o-picture__bg {
-	background: rgba($color: #000, $alpha: .2);
+	background: rgba($color: #000, $alpha: .4);
 }
 .o-head__shadow {
 	text-shadow: 0 0 1px #000;
@@ -277,21 +282,28 @@ section:not(:first-child) {
 .o-head__arrow {
 	bottom: 50%;
 	right: 0;
+	filter: invert(1) drop-shadow(0 0 3px #fff);
 	z-index: 1;
-	transform: translate(30%, 0) scale(-1, 1) rotate(120deg);
+	transform: rotate(0deg) scale(-1, 1) translate(-15px, -30px);
+	@media (min-width: 425px) {
+		& {
+			transform: rotate(0deg) scale(-1, 1) translate(0px, -30px);
+		}
+	}
 	@media (min-width: 576px) {
 		& {
-			transform: translate(0) scale(-1, 1) rotate(120deg);
+			right: 50px;
 		}
 	}
 	@media (min-width: 768px) {
 		& {
-			transform: translate(50%, 0) scale(-1, 1) rotate(120deg);
+			right: -110px;
 		}
 	}
 	@media (min-width: 992px) {
 		& {
-			transform: translate(70%, 0) scale(-1, 1) rotate(120deg);
+			transform: rotate(-50deg) scale(1) translate(50px, 0);
+			right: 0;
 		}
 	}
 }
@@ -582,6 +594,13 @@ section.picture {
 		object-fit: cover;
 	}
 }
+section.picture.picture-last {
+	img {
+		min-height: auto;
+		height: 70vh;
+	}
+}
+
 .o-picture__text {
 	bottom:  20px;
 	@media (min-width: 576px) {
@@ -630,6 +649,9 @@ section.picture {
 		object-fit: cover;
 		object-position: center;
 	}
+}
+.o-pict {
+	object-position: right center;
 }
 .o-safety__maxheight {
 	max-height: auto;
