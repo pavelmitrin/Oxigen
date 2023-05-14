@@ -163,6 +163,10 @@ section.picture .o-btn-tel {
   padding: 0 25px 0 15px;
 }
 
+.mortgage .o-pr__list p {
+  padding: 0;
+}
+
 .o-pr__list p {
   text-shadow: none;
 }
@@ -345,11 +349,11 @@ img.head__bg-picture:hover {
 .o-pr-presentation__arrow {
   right: 0;
   bottom: 50%;
-  transform: scale(0.8) rotate(-110deg);
+  transform: scale(0.8) rotate(-130deg);
 }
 @media (min-width: 375px) {
   .o-pr-presentation__arrow {
-    right: 20%;
+    right: 5%;
     bottom: 40%;
   }
 }
@@ -360,12 +364,12 @@ img.head__bg-picture:hover {
 }
 @media (min-width: 465px) {
   .o-pr-presentation__arrow {
-    right: 10%;
+    right: 8%;
   }
 }
 @media (min-width: 540px) {
   .o-pr-presentation__arrow {
-    right: 20%;
+    right: 10%;
   }
 }
 @media (min-width: 768px) {
@@ -786,7 +790,11 @@ section.picture.picture-last img {
 }
 
 .o-modal__input {
-  width: auto !important;
+  width: 240px !important;
+  border-radius: 10px !important;
+  border: 2px solid rgba(0, 0, 0, 0.7) !important;
+  background: transparent !important;
+  text-shadow: none;
 }
 
 #presentation .order-lg-1 {

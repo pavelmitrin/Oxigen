@@ -155,6 +155,13 @@ section.picture {
 	padding: 0 25px 0 15px;
 	}	
 }
+.mortgage {
+	.o-pr__list {
+		p {
+			padding: 0;
+		}
+	}
+}
 .o-pr__list {
 	p {
 		text-shadow: none;
@@ -336,10 +343,10 @@ img.head__bg-picture {
 .o-pr-presentation__arrow {
 	right: 0;
 	bottom: 50%;
-	transform: scale(.8) rotate(-110deg);
+	transform: scale(.8) rotate(-130deg);
 	@media (min-width: 375px) {
 		& {
-			right: 20%;
+			right: 5%;
 			bottom: 40%;
 		}
 	}
@@ -350,12 +357,12 @@ img.head__bg-picture {
 	}
 	@media (min-width: 465px) {
 		& {
-			right: 10%;
+			right: 8%;
 		}
 	}
 	@media (min-width: 540px) {
 		& {
-			right: 20%;
+			right: 10%;
 		}
 	}
 
@@ -774,8 +781,11 @@ section.picture.picture-last {
 	// transform: rotate(6deg)c-presentation-modal__img;
 }
 .o-modal__input {
-	width: auto !important;
-	
+	width: 240px !important;
+	border-radius: 10px !important;
+	border: 2px solid rgba($color: #000000, $alpha: .7) !important;
+	background: transparent !important;
+	text-shadow: none;
 }
 #presentation {
 	.order-lg-1 {

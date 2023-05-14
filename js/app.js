@@ -167,9 +167,11 @@ const exampleModal = document.getElementById('presentation')
 })
  */
 /* inputMask */
-const telInput = document.querySelector("#modalTel");
+const telInput = document.querySelectorAll(".o-modal__input");
 const telMask = new Inputmask("+7(999)999-99-99");
-telMask.mask(telInput);
+telInput.forEach((el)=> {
+	telMask.mask(el);
+})
 
 
 /* validate form */
