@@ -1,13 +1,13 @@
 <?php
 
 //В переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "5953230523:AAFVtyq-kZbDiLL9zUuHgc585C7J9LXy-Do";
+$token = "6271648730:AAG-gHMA6cM9_avNVXmPWf7Vllk3lARzMqg";
 
 //Сюда вставляем chat_id
-$chat_id = "-923288912";
+$chat_id = "-901713040";
 
 //Определяем переменные для передачи данных из нашей формы
-	$phone = ($_POST['requiPhone']);	
+	/* $phone = ($_POST['requiPhone']);	
 	if($_POST['btnName'] == 'call') {
 		$typeform = 'Обратный звонок';
 	} elseif($_POST['btnName'] == 'presentation') {
@@ -16,7 +16,19 @@ $chat_id = "-923288912";
 		$typeform = 'Планировки и цены';
 	} elseif ($_POST['btnName'] == 'record') {
 		$typeform = 'Запись на показ';
+	} */
+
+	if ($_POST['requiPhonePresentation']) {
+		$phone = ($_POST['requiPhonePresentation']);
+		$typeform = 'Скачать презентацию';
+	} elseif ($_POST['requiPhoneCall']) {
+		$phone = ($_POST['requiPhoneCall']);
+		$typeform = 'Обратный звонок';
+	} elseif ($_POST['requiPhoneLayout']) {
+		$phone = ($_POST['requiPhoneLayout']);
+		$typeform = 'Планировки и цены';
 	}
+
 	//Собираем в массив то, что будет передаваться боту
 	$arr = array(
 			'Форма:' => $typeform,
@@ -34,7 +46,6 @@ $chat_id = "-923288912";
 
 //Выводим сообщение об успешной отправке
    if ($sendToTelegram) {
-		 
 		header('location: /');
 	} else {
 			echo '<script>
