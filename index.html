@@ -19,7 +19,7 @@
 	<title>ЖК Кислород</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-nav">
-	<header class="header d-none">
+	<header class="header">
 		<nav class="navbar bg-white border-bottom fixed-top w-100">
 			<div class="container-fluid">
 				<div class="col-12 d-flex justify-content-between align-items-center w-100">
@@ -35,9 +35,9 @@
 					</div>
 					<div class="navbar-call d-flex align-items-center">
 						<button type="button" class="d-none d-md-block btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-							<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 						</button>
-						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -91,8 +91,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-8 col-lg-5 text-end d-none d-lg-block">
-						<p class="o-head__shadow fs-5 d-inline-flex align-items-center justify-content-end"> <img src="img/point.webp" alt="" width="30px" class="mx-2"> <span>Сочи, мкр. Бытха​ <span class="d-inline d-lg-block">ул. Ясногорская</span></span></p>
+						<div class="col-12 col-md-8 col-lg-5 text-end d-none d-lg-block px-lg-0">
+						<p class="o-head__shadow fs-4 d-inline-flex align-items-center justify-content-end"> <img src="img/point.webp" alt="" width="30px" class="mx-2"> <span>Сочи, мкр. Бытха​ <span class="d-inline d-lg-block">ул. Ясногорская</span></span></p>
 	
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 						<div class="col-12 col-md-8 col-lg-7 o-head__bg">
 							<div class="col-12 o-head__img d-flex flex-column flex-lg-row align-items-center">
 								<img src="img/presentation.webp" class="img-fluid o-head__presentation" alt="">
-								<button type="button" class="btn btn-gradient text-white py-2 " data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+								<button type="button" class="btn btn-gradient text-white py-2 " data-bs-toggle="modal" data-bs-target="#presentation">Открыть презентацию</button>
 							</div>
 							<div class="col-12 col-md-8 col-lg-7 text-center py-4 o-head__img-text position-relative ">
 								<img src="img/head/a1.png" class="position-absolute o-head__arrow" alt="">
@@ -198,13 +198,13 @@
 
 		<section class="o-presentation">
 			<div class="container bg-white box-shadow py-3 py-lg-3">
-				<div class="row row-cols-md-2 align-items-start">
-					<div class="col-12 col-md-6">
-						<div class="o-pr__buttons text-center">
+				<div class="row row-cols-md-2 align-items-start align-items-md-center">
+					<div class="col-12 col-md-6 col-xl-5">
+						<div class="o-pr__buttons text-center"><p class="o-pr-info fs-5 order-0">или перезвоните нам для персонального предложения</p>
 							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+								<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 							</button>
-							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#call">
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
 							
@@ -213,8 +213,8 @@
 							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
 						</div>
 					</div>
-					<div class="col-12 col-md-6 d-flex flex-column">
-						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+					<div class="col-12 col-md-6 col-xl-7 h-100 d-flex flex-column justify-content-md-center">
+						
 						<div class="o-pr__text order-2 order-md-1">
 							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
 							<div class="o-pr__list">
@@ -222,30 +222,30 @@
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Коллекция планировочных решений</p>
+									<p class="fs-5">Коллекция планировочных решений</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Проект комплексного развития территории</p>
+									<p class="fs-5">Проект комплексного развития территории</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Социальная инфраструктура</p>
+									<p class="fs-5">Социальная инфраструктура</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>О застройщике</p>
+									<p class="fs-5">О застройщике</p>
 								</div>
 							</div>
 						</div>
 						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
@@ -261,7 +261,7 @@
 							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
-							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
+							<a href="tel:+78002000485" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (800) 200-04-85</a>
 						</div>
 						<div class="o-pr__presentation p-lg-3">
 							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
@@ -295,9 +295,9 @@
 					</div>
 					<div class="o-picture__buttons text-center">
 						<button type="button" class="d-none d-md-inline-block btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-							<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 						</button>
-						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 
@@ -310,76 +310,76 @@
 		<section class="layouts" id="layouts">
 			<div class="container py-2 position-relative">
 				<div class="row">
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-1">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/1.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-2">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/2.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
 
 			<div class="container py-2 my-5 position-relative">
 				<div class="row">
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-1">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/3.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-2">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/4.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
 
 			<div class="container py-2 my-5 position-relative">
 				<div class="row">
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-1">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/5.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-2">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/6.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
 
 			<div class="container py-2 my-5 position-relative">
 				<div class="row">
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-1">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/7.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
-					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column">
+					<div class="o-layouts__cart col-12 my-3 my-md-0 col-md-6 d-flex flex-column cart-2">
 						<!-- <h2 class="fw-light text-center o-layouts__title">Планировки</h2> -->
 						<div class="border border-dark bg-white p-2 flex-fill">
 							<img src="img/layouts/8.webp" class="img-fluid" alt="">
 						</div>
-						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@layout">Планировки и цены</button>
+						<button type="button" class="btn btn-gradient text-white py-2 my-3 mx-auto" data-bs-toggle="modal" data-bs-target="#layout">Планировки и цены</button>
 					</div>
 				</div>
 			</div>
@@ -418,89 +418,61 @@
 
 		<section class="o-presentation">
 			<div class="container bg-white box-shadow py-3 py-lg-3">
-				<div class="row row-cols-md-2 align-items-start">
+				<div class="row row-cols-md-2 align-items-start align-items-md-center">
 					<div class="col-12 col-md-6">
-						<div class="o-pr__buttons text-center">
+						<div class="o-pr__buttons text-center"><p class="o-pr-info fs-5 order-0">или перезвоните нам для персонального предложения</p>
 							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+								<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 							</button>
-							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#call">
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
+							
 						</div>
 						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
 							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
 						</div>
 					</div>
-					<div class="col-12 col-md-6 d-flex flex-column">
-						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+					<div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-md-center align-items-md-center">
+						
 						<div class="o-pr__text order-2 order-md-1">
 							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
-							<div class="o-pr__list">
+							<div class="o-pr__list ">
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Коллекция планировочных решений</p>
+									<p class="fs-5">Коллекция планировочных решений</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Проект комплексного развития территории</p>
+									<p class="fs-5">Проект комплексного развития территории</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Социальная инфраструктура</p>
+									<p class="fs-5">Социальная инфраструктура</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>О застройщике</p>
+									<p class="fs-5">О застройщике</p>
 								</div>
 							</div>
 						</div>
 						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="presentation-block o-pr my-5">
-			<div class="container box-shadow py-3 py-lg-4">
-				<div class="row rol-cols-md-2 align-items-center">
-					<div class="col-12 col-md-6">
-						<div class="o-pr__buttons text-center">
-							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
-								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
-							</button>
-							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
-						</div>
-						<div class="o-pr__presentation p-lg-3">
-							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
-						</div>
-					</div>
-					<div class="col-12 col-md-6 d-inline-flex flex-column justify-content-between">
-						<ul class="fs-4 order-1 order-lg-0">
-							<li class="my-lg-4 fw-light">Коллекция планировочных решений</li>
-							<li class="my-lg-4 fw-light">Проект комплексного развития территории</li>
-							<li class="my-lg-4 fw-light">Социальная инфраструктура</li>
-							<li class="my-lg-4 fw-light">О застройщике</li>
-						</ul>
 
-						<div class="o-pr-presentation__btn position-relative">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
-							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
 
 		<section class="picture position-relative">
 			
@@ -514,9 +486,9 @@
 					</div>
 					<div class="o-picture__buttons text-center">
 						<button type="button" class="d-none d-md-inline-block btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-							<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 						</button>
-						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -559,9 +531,8 @@
 			<div class="container bg-white box-shadow">
 				<div class="row align-items-center py-lg-0">
 					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
 						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">Преимущества</h2>
-						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">Для удобства парковки автомобиля на территории ЖК предусмотрен многоуровневый паркинг на 1315 машин. Мы позаботились о безопасности наших жителей, поэтому бдительные камеры днем и ночью следят за придомовой территорией, детскими площадками, лифтами, подъездами и парковками.</p>
+						<p class="fw-light text-center text-lg-start o-repeat__text fs-5">Для удобства парковки автомобиля на территории ЖК предусмотрен многоуровневый охраняемый паркинг на 1315 машин. Также мы позаботились о безопасности наших жителей, поэтому бдительные камеры днем и ночью следят за придомовой территорией, детскими площадками, лифтами, подъездами и парковками.</p>
 					</div>
 					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container">
 						<img src="img/about/camera3.jpg" class="o-about__img o-safety__img anim__item _anim-no-hide w-100" alt="">
@@ -574,10 +545,8 @@
 				<div class="row align-items-center py-lg-0">
 					<div class="col-12 col-lg-4 py-3 p-md-0 o-about__img-container ">
 						<img src="img/about/ava.webp" class="o-about__img o-safety__img o-pict anim__item  _anim-no-hide w-100" alt="">
-						<!-- <img src="img/safety/logo.webp" alt="" class="position-absolute top-50 start-50 translate-middle o-safety__dopimg2"> -->
 					</div>
 					<div class="col-12 col-lg-6 mx-lg-auto py-2 py-lg-0">
-						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">Кислород</h3> -->
 						<h2 class="fw-light text-center text-lg-start fw-bolder head__title fs-3">О Застройщике</h2>
 						<p class="fw-light text-center text-lg-start o-repeat__text fs-5 mb-0">AVA Group — инвестиционно-строительный холдинг, основанный в 2007 году. Штаб-квартира расположена в Краснодаре. Компания входит в рейтинг ТОП-30 РФ по объёмам жилищного строительства и ТОП-5 застройщиков Краснодарского края. Один из лидеров в сфере строительства и управления объектами недвижимости, член «Российской гильдии управляющих и девелоперов» и Ассоциации девелоперов Краснодарского края.</p>
 					</div>
@@ -585,25 +554,25 @@
 			</div>
 		</section>
 
-
 		<section class="o-presentation">
 			<div class="container bg-white box-shadow py-3 py-lg-3">
-				<div class="row row-cols-md-2 align-items-start">
+				<div class="row row-cols-md-2 align-items-start align-items-md-center">
 					<div class="col-12 col-md-6">
-						<div class="o-pr__buttons text-center">
+						<div class="o-pr__buttons text-center"><p class="o-pr-info fs-5 order-0">или перезвоните нам для персонального предложения</p>
 							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-								<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+								<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 							</button>
-							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#call">
 								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 							</button>
+							
 						</div>
 						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
 							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
 						</div>
 					</div>
-					<div class="col-12 col-md-6 d-flex flex-column">
-						<p class="o-pr-info fs-6 order-0">или перезвоните нам для персонального предложения</p>
+					<div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-md-center">
+						
 						<div class="o-pr__text order-2 order-md-1">
 							<h4 class="fs-4 text-decoration-underline">Подробнее о проекте</h4>
 							<div class="o-pr__list">
@@ -611,67 +580,37 @@
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Коллекция планировочных решений</p>
+									<p class="fs-5">Коллекция планировочных решений</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Проект комплексного развития территории</p>
+									<p class="fs-5">Проект комплексного развития территории</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>Социальная инфраструктура</p>
+									<p class="fs-5">Социальная инфраструктура</p>
 								</div>
 								<div class="d-flex align-items-baseline">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
 										<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
 									</svg>
-									<p>О застройщике</p>
+									<p class="fs-5">О застройщике</p>
 								</div>
 							</div>
 						</div>
 						<div class="o-pr-presentation__btn position-relative order-1 order-md-2">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
+							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 mb-3 mb-lg-4 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation">Открыть презентацию</button>
 							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="presentation-block o-pr my-2">
-			<div class="container box-shadow py-3 py-lg-4">
-				<div class="row rol-cols-md-2 align-items-center">
-					<div class="col-12 col-md-6">
-						<div class="o-pr__buttons text-center">
-							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
-								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
-							</button>
-							<a href="tel:+79999999999" class="text-dark text-decoration-none fw-bold text-uppercase text-nowrap o-header__logo-text y-2 mx-1 mx-md-3 my-2 my-lg-0">8 (999) 999-99-99</a>
-						</div>
-						<div class="o-pr__presentation p-lg-3">
-							<img src="img/presentation.webp" class="img-fluid" alt="Буклет презентации">
-						</div>
-					</div>
-					<div class="col-12 col-md-6 d-inline-flex flex-column justify-content-between">
-						<ul class="fs-4 order-1 order-lg-0">
-							<li class="my-lg-4 fw-light">Коллекция планировочных решений</li>
-							<li class="my-lg-4 fw-light">Проект комплексного развития территории</li>
-							<li class="my-lg-4 fw-light">Социальная инфраструктура</li>
-							<li class="my-lg-4 fw-light">О застройщике</li>
-						</ul>
-
-						<div class="o-pr-presentation__btn position-relative">
-							<button type="button" class="btn btn-gradient text-white py-2 order-0 order-md-1 my-4 my-lg-0" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@presentation">Открыть презентацию</button>
-							<img src="img/more/arrow2.webp" class="position-absolute o-pr-presentation__arrow" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
+		
 		<section class="progress-construction position-relative">
 			<div class="container-fluid px-0 mx-0 position-relative o-progress__carousel py-5">
 				
@@ -713,24 +652,32 @@
 			</div>
 		</section>
 
-		<section class="more mortgage">
-			<div class="container bg-white box-shadow py-5 position-relative">
-				<div class="row align-items-center py-3 py-md-0">
-					<div class="col-12 col-md-6 mx-md-auto">
-						<h3 class="o-text-brown fw-light text-center text-md-start">Варианты покупки</h3>
-						<h2 class="fw-light text-center text-md-start head__title">Доступная ипотека</h2>
-						<h3 class="fw-light text-center text-md-start">Получите расчёт ипотеки на максимально выгодных условиях в ЖК «Южный Парк».</h3>
-						<div class="o-more__call position-relative text-center text-md-start">
-							<h4 class="fw-light o-more__call-text">Или позвоните нам</h4>
-							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-1" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Рассчитать ипотеку</button>
-							<div class="col-4 position-absolute o-more__arrow">
-								<img src="img/more/arrow.webp" alt="">
-							</div>
+
+		<section class="o-presentation">
+			<div class="container bg-white box-shadow py-3 py-lg-3">
+				<div class="row row-cols-md-2 align-items-start align-items-md-center">
+					<div class="col-12 col-md-6">
+						<div class="o-pr__buttons text-center"><p class="o-pr-info fs-5 order-0">или перезвоните нам для персонального предложения</p>
+							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
+							</button>
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center" data-bs-toggle="modal" data-bs-target="#call">
+								Рассчитать ипотеку
+							</button>
+							
+						</div>
+						<div class="o-pr__presentation p-lg-3 pb-lg-0 text-center">
+							<img src="img/presentation.webp" class="img-fluid w-75" alt="Буклет презентации">
 						</div>
 					</div>
-					<div class="col-12 col-md-5 py-2 p-md-0 mx-auto position-relative">
-						<img src="img/mortgage/options.webp" class="img-fluid" alt="">
+					<div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-md-center">
+						
+						<div class="o-pr__text order-2 order-md-1">
+							<h4 class="fs-4 px-md-3 text-decoration-underline">Ипотека</h4>
+							<div class="o-pr__list">
+								<p class="fs-5 ">Подбор соответствующих ипотечных программ производится индивидуально для Вас на основании сведений, предоставленных крупнейшими банками РФ на самых выгодных условиях.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -740,11 +687,11 @@
 			<div class="container bg-white box-shadow py-5">
 				<div class="row mb-3">
 					<div class="col-12">
-						<h2 class="fw-light text-center text-uppercase o-documents__title">Документация застройщика</h2>
+						<h2 class="fw-light text-center text-uppercase o-documents__title">Документы</h2>
 					</div>
 				</div>
-				<div class="o-documents__docs">
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
+				<div class="o-documents__docs  mx-md-3 ">
+					<!-- <div class="row border-top border-bottom py-2 align-items-center text-center">
 						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
 							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Разрешение на строительство</a>
 						</div>
@@ -759,133 +706,71 @@
 						<div class="d-none d-md-block col-md-3">
 							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
 						</div>
-					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Договор на предоставление земельного участка на условиях аренды</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
+					</div> -->
+
+					<div class="row py-2 py-md-0">
+						<div class="col-12 d-md-flex justify-content-md-between align-items-md-center">
+							<div class="o-documents__text">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%96%D0%9A_%D0%9A%D0%B8%D1%81%D0%BB%D0%BE%D1%80%D0%BE%D0%B4_%D0%BE%D1%82_10.05.2023_%D0%B3%D0%BE%D0%B4%D0%B0.pdf&name=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%96%D0%9A_%D0%9A%D0%B8%D1%81%D0%BB%D0%BE%D1%80%D0%BE%D0%B4_%D0%BE%D1%82_10.05.2023_%D0%B3%D0%BE%D0%B4%D0%B0.pdf" class="text-decoration-none text-black o-doc__title mx-md-3 fs-5">
+									<span class="d-block">Проектная декларация ЖК Кислород от 10.05.2023 года</span>
+									<span class="d-block text-secondary o-documents__subtext"> PDF, 2,56 МБ</span>
+								</a>
+							</div>
+							<button type="button" class="btn btn-gradient py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%96%D0%9A_%D0%9A%D0%B8%D1%81%D0%BB%D0%BE%D1%80%D0%BE%D0%B4_%D0%BE%D1%82_10.05.2023_%D0%B3%D0%BE%D0%B4%D0%B0.pdf&name=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%8F_%D0%96%D0%9A_%D0%9A%D0%B8%D1%81%D0%BB%D0%BE%D1%80%D0%BE%D0%B4_%D0%BE%D1%82_10.05.2023_%D0%B3%D0%BE%D0%B4%D0%B0.pdf" class="text-decoration-none fw-bold text-white text-nowrap fz16 w-100 h-100 d-block">Скачать документ</a>
+							</button>
 						</div>
 					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Договор о переходе прав и обязаннойстей по договору аренды земель</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
+					<div class="row py-2 py-md-0">
+						<div class="col-12 d-md-flex justify-content-md-between align-items-md-center">
+							<div class="o-documents__text">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%A0%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_4_5_6_7_%D1%8D%D1%82%D0%B0%D0%BF%D1%8B.pdf&name=%D0%A0%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_4_5_6_7_%D1%8D%D1%82%D0%B0%D0%BF%D1%8B.pdf" class="text-decoration-none text-black o-doc__title mx-md-3  fs-5">
+									<span class="d-block">Разрешение на строительство ЖК Кислород</span>
+									<span class="d-block text-secondary o-documents__subtext"> PDF, 2,2 МБ</span>
+								</a>
+							</div>
+							<button type="button" class="btn btn-gradient py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%A0%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_4_5_6_7_%D1%8D%D1%82%D0%B0%D0%BF%D1%8B.pdf&name=%D0%A0%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_4_5_6_7_%D1%8D%D1%82%D0%B0%D0%BF%D1%8B.pdf" class="text-decoration-none fw-bold text-white text-nowrap fz16 w-100 h-100 d-block">Скачать документ</a>
+							</button>
 						</div>
 					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Заключение о соответствии</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
+					<div class="row py-2 py-md-0">
+						<div class="col-12 d-md-flex justify-content-md-between align-items-md-center">
+							<div class="o-documents__text">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9E%D0%91%D0%A0%D0%90%D0%97%D0%95%D0%A6_%D0%94%D0%94%D0%A3_%D0%9A%D0%98%D0%A1___2022.pdf&name=%D0%9E%D0%91%D0%A0%D0%90%D0%97%D0%95%D0%A6_%D0%94%D0%94%D0%A3_%D0%9A%D0%98%D0%A1___2022.pdf" class="text-decoration-none text-black o-doc__title mx-md-3  fs-5">
+									<span class="d-block">Шаблон ДДУ ЖК Кислород</span>
+									<span class="d-block text-secondary o-documents__subtext"> PDF, 397,35 КБ</span>
+								</a>
+							</div>
+							<button type="button" class="btn btn-gradient py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%9E%D0%91%D0%A0%D0%90%D0%97%D0%95%D0%A6_%D0%94%D0%94%D0%A3_%D0%9A%D0%98%D0%A1___2022.pdf&name=%D0%9E%D0%91%D0%A0%D0%90%D0%97%D0%95%D0%A6_%D0%94%D0%94%D0%A3_%D0%9A%D0%98%D0%A1___2022.pdf" class="text-decoration-none fw-bold text-white text-nowrap fz16 w-100 h-100 d-block">Скачать документ</a>
+							</button>
 						</div>
 					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Проектная декларация</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
+					<div class="row py-2 py-md-0">
+						<div class="col-12 d-md-flex justify-content-md-between align-items-md-center">
+							<div class="o-documents__text">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BE_%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D1%85.pdf&name=%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BE_%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D1%85.pdf" class="text-decoration-none text-black o-doc__title mx-md-3  fs-5">
+									<span class="d-block">Информация о выданных заключениях</span>
+									<span class="d-block text-secondary o-documents__subtext"> PDF, 184,83 КБ</span>
+								</a>
+							</div>
+							<button type="button" class="btn btn-gradient py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BE_%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D1%85.pdf&name=%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BE_%D0%B2%D1%8B%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%D1%85.pdf" class="text-decoration-none fw-bold text-white text-nowrap fz16 w-100 h-100 d-block">Скачать документ</a>
+							</button>
 						</div>
 					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Градостроительный план земельного участка</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
-						</div>
-					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Извещение о начале строительства</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
-						</div>
-					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Договор ДДУ</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
-						</div>
-					</div>
-					<div class="row border-top border-bottom py-2 align-items-center text-center">
-						<div class="col-6 col-sm-4 col-md-3 text-sm-start px-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline fw-light text-black o-doc__title">Условия привлечения денежных средств</a>
-						</div>
-						<div class="col-6 col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Дата документа</p>
-							<p class="my-1 text-black o-doc__value">-</p>
-						</div>
-						<div class="d-none d-sm-block col-sm-4 col-md-3">
-							<p class="my-1 fw-light text-secondary o-doc__name">Разместил:</p>
-							<p class="my-1 text-black o-doc__value">AVA Group</p>
-						</div>
-						<div class="d-none d-md-block col-md-3">
-							<a href="https://disk.yandex.ru/d/gxO9EWBSrG8_dw" class="text-decoration-underline text-black o-doc__title">Скачать документ</a>
+					<div class="row py-2 py-md-0">
+						<div class="col-12 d-md-flex justify-content-md-between align-items-md-center">
+							<div class="o-documents__text">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf&name=%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf" class="text-decoration-none text-black o-doc__title mx-md-3  fs-5">
+									<span class="d-block">Экспертиза проектной декларации</span>
+									<span class="d-block text-secondary o-documents__subtext"> PDF, 3,62 МБ</span>
+								</a>
+							</div>
+							<button type="button" class="btn btn-gradient py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
+								<a href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fgbxfd%2FBmgS0Bz4AKuPrvlnBC5wZCg54H1GvIfRQp7YcukbtcgExp262X4wR9roccq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf&name=%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8.pdf" class="text-decoration-none fw-bold text-white text-nowrap fz16 w-100 h-100 d-block">Скачать документ</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -902,9 +787,9 @@
 					</div>
 					<div class="o-picture__buttons text-center ">
 						<button type="button" class="d-none d-md-inline-block btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 my-2 my-lg-0 text-center">
-							<a href="tel:+79999999999" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (999) 999-99-99</a>
+							<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-white fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
 						</button>
-						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">
+						<button type="button" class="btn btn-gradient text-white text-center fz16" data-bs-toggle="modal" data-bs-target="#call">
 							<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
 						</button>
 					</div>
@@ -917,19 +802,23 @@
 		<section class="more contacts">
 			<div class="container bg-white box-shadow position-relative">
 				<div class="row align-items-center py-3 py-md-0">
-					<div class="col-12 col-md-5 mx-md-auto py-5">
-						<h3 class="o-text-brown fw-light text-center text-md-start">ЖК Кислород</h3>
-						<h2 class="fw-light text-center text-md-start head__title">Наши контакты</h2>
-						<h3 class="fw-light text-center text-md-start">г. Сочи, микрорайон Бытха ул. Ясногорская</h3>
-						<div class="o-more__call position-relative text-center text-md-start">
-							<a href="tel:+79999999999" class="d-block text-dark my-4 fs-4 fw-bold text-decoration-underline text-uppercase text-nowrap"><i class="bi bi-telephone-fill px-1"></i>8 (999) 999-99-99</a>
-							<button type="button" class="btn btn-gradient text-white py-1" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Заказать звонок</button>
-							<div class="col-4 position-absolute o-more__arrow">
-								<img src="img/more/arrow.webp" alt="">
-							</div>
+					<div class="col-12 col-lg-5 mx-md-auto py-3 py-sm-4">
+						<!-- <h3 class="o-text-brown fw-light text-center text-md-start">ЖК Кислород</h3> -->
+						<div class="col-lg-10 mx-auto">
+							<h2 class="fw-normal text-center text-lg-start fs-2 ">Адрес ЖК Кислород</h2> <!-- head__title -->
+							<h3 class="fw-light text-center text-lg-start fs-3 my-4">г. Сочи, микрорайон Бытха ул. Ясногорская</h3>
+						
+						</div>
+						<div class="o-more__call position-relative text-center text-xl-start col-xxl-10 mx-xxl-auto">
+							<button type="button" class="btn btn-gradient o-btn-tel py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center">
+								<a href="tel:+78002000485" class="text-decoration-none fw-bold text-uppercase text-nowrap text-dark fz16 w-100 h-100 d-block">8 (800) 200-04-85</a>
+							</button>
+							<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center" data-bs-toggle="modal" data-bs-target="#call">
+								<i class="bi bi-telephone"></i><span class="mx-2">Заказать звонок</span>
+							</button>
 						</div>
 					</div>
-					<div class="col-12 col-md-7 py-2 p-md-0 mx-auto h-100 position-relative">
+					<div class="col-12 col-lg-7 py-2 p-md-0 mx-auto h-100 position-relative">
 						<img src="img/map.webp" class="img-fluid h-100" alt="">
 					</div>
 				</div>
@@ -952,7 +841,8 @@
 
 
 	<!-- Modals -->
-	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+
+	<!-- <div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
 			<div class="modal-content position-relative">
 				<div class="modal-body">
@@ -966,7 +856,92 @@
 							<p class="c-presentation__text text-center">Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong></p>
 							<form action="telega.php" method="post" id="presentation__modal" class="needs-validation" novalidate>
 								<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3" placeholder="+7 (999) 999-99-99" name="requiPhone" id="modalTel"  aria-label="Номер пользователя" required>
-								<button class="btn btn-lg text-white w-100 rounded-pill py-3 c-presentation__modal-btn" type="submit" id="downloadPresentation" name="btnName">Скачать презентацию</button>
+							
+								<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center" type="submit" id="downloadPresentation">
+									Скачать презентацию
+								</button>
+							</form>
+							<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div class="modal fade" id="presentation" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+			<div class="modal-content position-relative">
+				<div class="modal-body py-0 overflow-hidden">
+					<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="row row-cols-1 row-cols-lg-2 align-items-lg-center m-0 justify-content-center justify-contentlg-start ">
+						<div class="col-12 col-lg-6 order-lg-1 text-center px-lg-3 flex-lg-fill">
+							<img src="img/presentation.webp" class="img-fluid" alt="">
+						</div>
+						<div class="col-12 col-lg-6 mt-4 mt-sm-3 mb-2 my-lg-4 pt-5 pt-lg-0 px-3">
+							<h2 class="text-center c-modal__title">Получить презентацию</h3>
+							<p class="c-presentation__text text-center">Укажите Ваш номер телефона для скачивания файла</p>
+							<form action="telega.php" method="post" id="presentation__modal" class="needs-validation text-center" novalidate>
+								<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3 text-center mx-auto o-modal__input" placeholder="+7 (999) 999-99-99" name="requiPhone" id="modalTel"  aria-label="Номер пользователя" required>
+							
+								<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center" type="submit" id="downloadPresentation">
+									Скачать презентацию
+								</button>
+							</form>
+							<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="call" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+			<div class="modal-content position-relative">
+				<div class="modal-body py-0 overflow-hidden">
+					<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="row row-cols-1 row-cols-lg-2 align-items-lg-center m-0 justify-content-center justify-contentlg-start ">
+						<div class="col-12 col-lg-6 order-lg-1 text-center px-lg-3 flex-lg-fill">
+							<img src="img/modals/callBg.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-12 col-lg-6 mt-4 mt-sm-3 mb-2 my-lg-4 pt-5 pt-lg-0 px-3">
+							<h2 class="text-center c-modal__title">Обратный звонок</h3>
+							<p class="c-presentation__text text-center">Наш менеджер свяжется с вами в течение 10 минут</p>
+							<form action="telega.php" method="post" id="presentation__modal" class="needs-validation text-center" novalidate>
+								<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3 text-center mx-auto o-modal__input" placeholder="+7 (999) 999-99-99" name="requiPhone" id="modalTel"  aria-label="Номер пользователя" required>
+							
+								<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center" type="submit">
+									Заказать звонок
+								</button>
+							</form>
+							<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="layout" tabindex="-1" aria-labelledby="presentationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+			<div class="modal-content position-relative">
+				<div class="modal-body py-0 overflow-hidden">
+					<button type="button" class="btn-close position-absolute c-btn__closemodal" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="row row-cols-1 row-cols-lg-2 align-items-lg-center m-0 justify-content-center justify-contentlg-start ">
+						<div class="col-12 col-lg-6 order-lg-1 text-center px-lg-3 flex-lg-fill">
+							<img src="img/modals/callBg.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-12 col-lg-6 mt-4 mt-sm-3 mb-2 my-lg-4 pt-5 pt-lg-0 px-3">
+							<h2 class="text-center c-modal__title">Планировки и цены</h3>
+							<p class="c-presentation__text text-center">Укажите Ваш номер телефона для подбора лучшей цены и планировки.</p>
+							<form action="telega.php" method="post" id="presentation__modal" class="needs-validation text-center" novalidate>
+								<input type="tel" class="form-control form-control-lg rounded-pill mb-3 py-3 text-center mx-auto o-modal__input" placeholder="+7 (999) 999-99-99" name="requiPhone" id="modalTel"  aria-label="Номер пользователя" required>
+							
+								<button type="button" class="btn btn-gradient text-white py-2 mx-1 mx-md-3 mx-xxl-1 my-2 my-xl-0 text-center" type="submit">
+									Получить
+								</button>
 							</form>
 							<p class="text-center text-secondary opacity-75 mt-3 c-presentation__text-sm">Политика конфиденциальности</p>
 						</div>
@@ -1007,7 +982,7 @@
 							<p class="mt-3 ">Эко-район со свежим горным воздухом.</p>
 							<p class=""><span class="fw-bold">7 минут до центра Сочи на автомобиле.</span></p>
 							<p class="">Ипотека от <span class="fw-bold">0,1% на весь срок.</span></p>
-							<button type="button" class="btn btn-gradient text-white py-1 mt-5" data-bs-toggle="modal" data-bs-target="#presentation" data-bs-whatever="@call">Получить подборку</button>
+							<button type="button" class="btn btn-gradient text-white py-1 mt-5" data-bs-toggle="modal" data-bs-target="#call">Получить подборку</button>
 						</div>
 					</div>
 				</div>

@@ -81,23 +81,14 @@ section:not(:first-child) {
 
 /* head */
 .head {
-	background: url('../img/head/headbg.webp') 0 0/cover no-repeat;
-	min-height: 100vh;
-	&::after {
-		// content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba($color: #000000, $alpha: .3);
-	}
+	background: url('../img/head/headbg.webp') center bottom/cover no-repeat;
+	min-height: 100%;
+	
 	.container-fluid {
 		background-color: rgba($color: #000000, $alpha: .3);
 	}
 	.container.container2 {
-		min-height: 100vh;
+		min-height: 100%;
 		padding: 0 !important;
 		z-index: 1;
 		position: relative;
@@ -118,7 +109,8 @@ section:not(:first-child) {
 
 }
 .o-head__bg {
-	background: rgba($color: #fff, $alpha: .2);
+	// background: rgba($color: #fff, $alpha: .2);
+	background: rgba($color: #000000, $alpha: .3);
 }
 .o-head__presentation {
 	width: 100% !important;
@@ -160,7 +152,7 @@ section.picture {
 	
 	p {
 	text-shadow: 0 0 10px #000;
-	padding: 0 10px;
+	padding: 0 25px 0 15px;
 	}	
 }
 .o-pr__list {
@@ -282,7 +274,8 @@ section.picture {
 .o-head__arrow {
 	bottom: 50%;
 	right: 0;
-	filter: invert(1) drop-shadow(0 0 3px #fff);
+	// filter: invert(1) drop-shadow(0 0 3px #fff);
+	filter: invert(1);
 	z-index: 1;
 	transform: rotate(0deg) scale(-1, 1) translate(-15px, -30px);
 	@media (min-width: 425px) {
@@ -611,6 +604,23 @@ section.picture.picture-last {
 /* layouts */
 .o-layouts__cart {
 	min-height: 100%;
+
+}
+.o-layouts__cart.cart-1 {
+	@media (min-width: 768px) {
+		& {
+			padding-left: 0;
+			float: left;
+		}
+	}
+}
+.o-layouts__cart.cart-2 {
+	@media (min-width: 768px) {
+		& {
+			padding-right: 0;
+			float: right;
+		}
+	}
 }
 .o-layouts__title {
 	font-size: 35px;
@@ -735,18 +745,37 @@ section.picture.picture-last {
 		font-size: 18px;
 	}
 }
+.o-documents__text {
+	@media (min-width: 992px) {
+		& {
+			max-height: 80px;
+		}
+	}
+}
+.o-documents__subtext {
+	font-size: 13px;
+}
 
 /* modals */
 .c-btn__closemodal {
 	top: 10px;
 	right: 10px;
 	z-index: 10000;
+	background-color: rgba($color: #fff, $alpha: .8);
+}
+.o-modal__img {
+	max-height: 100% !important;
+	// width: 100%;
 }
 .c-presentation__text {
 	color: #8c7342;
 }
 .c-presentation-modal__img {
-	transform: rotate(6deg);
+	// transform: rotate(6deg)c-presentation-modal__img;
+}
+.o-modal__input {
+	width: auto !important;
+	
 }
 #presentation {
 	.order-lg-1 {

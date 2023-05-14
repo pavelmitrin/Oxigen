@@ -71,15 +71,31 @@ function checkScroll() {
 		header.classList.add("d-none");
 	}
 }
-const header = document.querySelector(".header");
+const header = document.querySelector("header.header");
+const nav = header.querySelector("nav.navbar");
+const head = document.querySelector("section.head");
+
 window.addEventListener('load', () => {
-	checkScroll();
+	if (window.innerWidth < 992) {
+		checkScroll();
+		head.style.paddingTop = 0;
+	} else {
+		head.style.paddingTop = `${nav.offsetHeight}px`;
+	}
 })
 window.addEventListener('scroll', () => {
-	checkScroll();
+	if (window.innerWidth < 992) {
+		checkScroll();
+	}
 });
 window.addEventListener('resize', () => {
-	checkScroll();
+	if (window.innerWidth < 992) {
+		checkScroll();
+		head.style.paddingTop = 0;
+	} else {
+		header.classList.remove("d-none");
+		head.style.paddingTop = `${nav.offsetHeight}px`;
+	}
 });
 // window.addEventListener('scroll', checkScroll);
 // window.addEventListener('load', checkScroll);
@@ -87,13 +103,13 @@ window.addEventListener('resize', () => {
 
 /* modal */
 const exampleModal = document.getElementById('presentation')
-exampleModal.addEventListener('show.bs.modal', event => {
+/* exampleModal.addEventListener('show.bs.modal', event => {
 	// Кнопка, которая активировала модальное окно
 	const button = event.relatedTarget
 	// Извлекает информацию из атрибутов data-bs-*
 	const recipient = button.getAttribute('data-bs-whatever')
 	const recipient0 = recipient.replace('@', '');
-	/* data */
+	//	data 
 	const allWhateverValue = {
 		call: {
 			name: "Обратный звонок",
@@ -130,7 +146,7 @@ exampleModal.addEventListener('show.bs.modal', event => {
 	let btnText = allWhateverValue[recipient0].btnText;
 	let btnName = allWhateverValue[recipient0].btnName;
 
-	//
+
 	// Обновляет содержимое модального окна.
 	const modalTitle = exampleModal.querySelector('.c-modal__title')
 	const modalText = exampleModal.querySelector('.c-presentation__text');
@@ -149,7 +165,7 @@ exampleModal.addEventListener('show.bs.modal', event => {
 	modalBtn.setAttribute('value', btnName);
 	modalBtn.textContent = btnText;
 })
-
+ */
 /* inputMask */
 const telInput = document.querySelector("#modalTel");
 const telMask = new Inputmask("+7(999)999-99-99");
