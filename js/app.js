@@ -94,11 +94,6 @@ telInput.forEach((el)=> {
 
 /* validate form */
 const forms = document.querySelectorAll('.needs-validation')
-document.querySelector('[name="requiPhoneCall"]').addEventListener('input', ()=> {
-	let a = document.querySelector('[name="requiPhoneCall"]').value;
-	a = a.replace(/\D+/g, '')
-	console.log(/\d{11}/g.test(a));
-})
 // Loop over them and prevent submission
 Array.from(forms).forEach(form => {
    form.addEventListener('submit', event => {
@@ -123,7 +118,6 @@ function addValidate(form) {
 		let val = inp.value;
 		let correct = val.replace(/\D+/g, '');
 		correct = /\d{11}/g.test(correct);
-		console.log(correct);
 		return correct;
 }
 
