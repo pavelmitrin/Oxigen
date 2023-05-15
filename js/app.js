@@ -1,21 +1,6 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 
-/* modal */
-
-const modalPresentation = document.querySelector("#presentation");
-const imgWrapper = modalPresentation.querySelector(".order-lg-1");
-
-function modalImgAbsolute() {
-	if (window.innerWidth < 992) {
-		imgWrapper.classList.add("position-absolute", "w-75", "top-0", "start-50", "translate-middle");
-	} else {
-		imgWrapper.classList.remove("position-absolute", "w-75", "top-0", "start-50", "translate-middle");
-	}
-}
-// window.addEventListener('load', modalImgAbsolute);
-// window.addEventListener('resize', modalImgAbsolute)
-/* .modal */
 
 const swiperOne = new Swiper('.o-swiper-carouselOne', {
 	effect: "coverflow",  
@@ -97,76 +82,9 @@ window.addEventListener('resize', () => {
 		head.style.paddingTop = `${nav.offsetHeight}px`;
 	}
 });
-// window.addEventListener('scroll', checkScroll);
-// window.addEventListener('load', checkScroll);
 
 
-/* modal */
-const exampleModal = document.getElementById('presentation')
-/* exampleModal.addEventListener('show.bs.modal', event => {
-	// Кнопка, которая активировала модальное окно
-	const button = event.relatedTarget
-	// Извлекает информацию из атрибутов data-bs-*
-	const recipient = button.getAttribute('data-bs-whatever')
-	const recipient0 = recipient.replace('@', '');
-	//	data 
-	const allWhateverValue = {
-		call: {
-			name: "Обратный звонок",
-			text: "Как правило перезваниваем в течение 15 минут",
-			img: "img/modals/phone.webp",
-			btnText: "Отправить",
-			btnName: "call",
-		},
-		presentation: {
-			name: "Скачайте презентацию",
-			text: "Укажите свои контактные данные и скачайте презентацию <strong>в один клик</strong>",
-			img: "img/modals/1.webp",
-			btnText: "Скачать презентацию",
-			btnName: "presentation",
-		},
-		layout: {
-			name: "Планировки и цены",
-			text: "Наш менеджер свяжется, уточнит желаемые планировки и отправит информацию",
-			img: "img/modals/plans.webp",
-			btnText: "Получить",
-			btnName: "price",
-		},
-		show: {
-			name: "Запись на показ",
-			text: "Наш менеджер свяжется и Вы запланируете удобную дату и время показа",
-			img: "img/modals/phone.webp",
-			btnText: "Отправить",
-			btnName: "record",
-		},
-	}
-	let name =  allWhateverValue[recipient0].name;
-	let text = allWhateverValue[recipient0].text;
-	let img = allWhateverValue[recipient0].img;
-	let btnText = allWhateverValue[recipient0].btnText;
-	let btnName = allWhateverValue[recipient0].btnName;
-
-
-	// Обновляет содержимое модального окна.
-	const modalTitle = exampleModal.querySelector('.c-modal__title')
-	const modalText = exampleModal.querySelector('.c-presentation__text');
-	const modalImg = exampleModal.querySelector('.c-presentation-modal__img');
-	const modalBtn = exampleModal.querySelector('.c-presentation__modal-btn');
-
-	for (const key in allWhateverValue) {
-		exampleModal.classList.remove(`c-presentation-modal__img-${key}`);
-	}
-	exampleModal.classList.add(`c-presentation-modal__img-${recipient0}`);
-
-
-	modalTitle.textContent = name;
-	modalText.innerHTML = `${text}`;
-	modalImg.setAttribute('src', `${img}`);
-	modalBtn.setAttribute('value', btnName);
-	modalBtn.textContent = btnText;
-})
- */
-/* inputMask */
+//* inputMask */
 const telInput = document.querySelectorAll(".o-modal__input");
 const telMask = new Inputmask("+7(999)999-99-99");
 telInput.forEach((el)=> {
@@ -176,7 +94,11 @@ telInput.forEach((el)=> {
 
 /* validate form */
 const forms = document.querySelectorAll('.needs-validation')
-
+document.querySelector('[name="requiPhoneCall"]').addEventListener('input', ()=> {
+	let a = document.querySelector('[name="requiPhoneCall"]').value;
+	a = a.replace(/\D+/g, '')
+	console.log(/\d{11}/g.test(a));
+})
 // Loop over them and prevent submission
 Array.from(forms).forEach(form => {
    form.addEventListener('submit', event => {
@@ -188,6 +110,22 @@ Array.from(forms).forEach(form => {
       form.classList.add('was-validated')
 	}, false)
 })
+forms.forEach((form => {
+	form.addEventListener('submit', event=> {
+		if (!addValidate(form)) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+	})
+}))
+function addValidate(form) {
+	const inp = form.querySelector('input');
+		let val = inp.value;
+		let correct = val.replace(/\D+/g, '');
+		correct = /\d{11}/g.test(correct);
+		console.log(correct);
+		return correct;
+}
 
 // Download presentation
 function get_file_url(url) {
@@ -249,3 +187,11 @@ if (allAnimItem.length > 0) {
 	}
 }
 animScroll();
+
+const absoluteBtnIcon = document.querySelector('.o-absolute__tel');
+setInterval(() => {
+	setInterval(() => {
+		absoluteBtnIcon.classList.add('anime');
+	}, 1500);
+	absoluteBtnIcon.classList.remove('anime');
+}, 7000);
