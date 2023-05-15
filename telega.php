@@ -48,8 +48,8 @@ $chat_id = "-901713040";
    if ($sendToTelegram) {
 		header('location: /');
 	} else {
-			echo '<script>
-				errorSendMail();
-			</script>';
+		echo `<script>
+			errorSendMail();
+		</script>`;
 	}
 ?>

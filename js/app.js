@@ -203,11 +203,9 @@ function get_file_url(url) {
 
 }
 const btnModalPresentation = document.querySelector("#downloadPresentation");
-const form = document.querySelector("#presentation");
+const form = document.querySelector("#presentation__modal");
 form.addEventListener("submit", (e)=> {
-	if (e.target.closest(".c-presentation-modal__img-presentation")) {
-		get_file_url("../files/кислород буклет.pdf");
-	}
+	get_file_url("../files/кислород буклет.pdf");
 })
 
 
