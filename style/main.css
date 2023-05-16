@@ -542,8 +542,8 @@ section.picture.picture-last img {
 }
 
 .o-btn__absolute {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   bottom: 20px;
   right: 20px;
   z-index: 999;
