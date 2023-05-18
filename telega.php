@@ -1,23 +1,12 @@
 <?php
 
 //В переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "6271648730:AAG-gHMA6cM9_avNVXmPWf7Vllk3lARzMqg";
+$token = "6147118060:AAEvEXBVlHiI9h0GxedLwGo-nexcfRMteac";
 
 //Сюда вставляем chat_id
-$chat_id = "-901713040";
+$chat_id = "-984435955";
 
 //Определяем переменные для передачи данных из нашей формы
-	/* $phone = ($_POST['requiPhone']);	
-	if($_POST['btnName'] == 'call') {
-		$typeform = 'Обратный звонок';
-	} elseif($_POST['btnName'] == 'presentation') {
-		$typeform = 'Скачать презентацию';
-	} elseif($_POST['btnName'] == 'price') {
-		$typeform = 'Планировки и цены';
-	} elseif ($_POST['btnName'] == 'record') {
-		$typeform = 'Запись на показ';
-	} */
-
 	if ($_POST['requiPhonePresentation']) {
 		$phone = ($_POST['requiPhonePresentation']);
 		$typeform = 'Скачать презентацию';
