@@ -7,13 +7,13 @@ $token = "6147118060:AAEvEXBVlHiI9h0GxedLwGo-nexcfRMteac";
 $chat_id = "-984435955";
 
 //Определяем переменные для передачи данных из нашей формы
-	if ($_POST['requiPhonePresentation']) {
+	if (!empty($_POST['requiPhonePresentation'])) {
 		$phone = ($_POST['requiPhonePresentation']);
 		$typeform = 'Скачать презентацию';
-	} elseif ($_POST['requiPhoneCall']) {
+	} elseif (!empty($_POST['requiPhoneCall'])) {
 		$phone = ($_POST['requiPhoneCall']);
 		$typeform = 'Обратный звонок';
-	} elseif ($_POST['requiPhoneLayout']) {
+	} elseif (!empty($_POST['requiPhoneLayout'])) {
 		$phone = ($_POST['requiPhoneLayout']);
 		$typeform = 'Планировки и цены';
 	}
@@ -24,7 +24,7 @@ $chat_id = "-984435955";
 			'Телефон:' => $phone
 	);
 
-
+$txt = '';
 //Настраиваем внешний вид сообщения в телеграме
    foreach($arr as $key => $value) {
       $txt .= "<b>".$key."</b> ".$value."%0A";
@@ -35,10 +35,8 @@ $chat_id = "-984435955";
 
 //Выводим сообщение об успешной отправке
    if ($sendToTelegram) {
-		header('location: /');
+		header('location: http://zhk-kislorod.com/');
 	} else {
-		echo `<script>
-			errorSendMail();
-		</script>`;
+		header('location: http://zhk-kislorod.com/');
 	}
 ?>
